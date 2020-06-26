@@ -1,0 +1,41 @@
+PODS:
+  - Masonry (1.1.0)
+  - OCBarrage (1.0.5)
+  - YYModel (1.0.4)
+  - YYText (1.0.7)
+  - ZFPlayer (3.3.2):
+    - ZFPlayer/Core (= 3.3.2)
+  - ZFPlayer/AVPlayer (3.3.2):
+    - ZFPlayer/Core
+  - ZFPlayer/ControlView (3.3.2):
+    - ZFPlayer/Core
+  - ZFPlayer/Core (3.3.2)
+
+DEPENDENCIES:
+  - Masonry
+  - OCBarrage
+  - YYModel
+  - YYText
+  - ZFPlayer
+  - ZFPlayer/AVPlayer
+  - ZFPlayer/ControlView
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - OCBarrage
+    - YYModel
+    - YYText
+    - ZFPlayer
+  trunk:
+    - Masonry
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  OCBarrage: 5ee1a922afacb2c04739621ccda71872185e2e59
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+  ZFPlayer: 88e8abd393ccbd8684e62cf557d25c8009b9dd70
+
+PODFILE CHECKSUM: 00e73e6a8fc8cf5b92f05dffa1ed71f48f40fb91
+
+COCOAPODS: 1.9.1

@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8377B10C46329DE7127C4491 /* libPods-ZBLiveRoom.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54AFFF6AB2379B9BC75D3155 /* libPods-ZBLiveRoom.a */; };
+		9F4DAA022449992500630680 /* DouYinTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4DAA012449992500630680 /* DouYinTableViewCell.m */; };
+		9F4DAA052449AD3F00630680 /* SPDouYinControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4DAA042449AD3F00630680 /* SPDouYinControlView.m */; };
+		9F8848E724497C300085ACAF /* DouYinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F8848E624497C300085ACAF /* DouYinViewController.m */; };
+		9F8848EA24497E540085ACAF /* DouYinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F8848E924497E540085ACAF /* DouYinModel.m */; };
+		9F8848ED2449871F0085ACAF /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F8848EC2449871F0085ACAF /* data.json */; };
+		9F8DFD302489F9CE00804EA1 /* BarrageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F8DFD2F2489F9CE00804EA1 /* BarrageViewController.m */; };
+		9F8DFD33248A172700804EA1 /* ZBBarrageQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F8DFD32248A172700804EA1 /* ZBBarrageQueue.m */; };
+		9F8EE56524A4927D00A88649 /* douyin.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F8EE56424A4927D00A88649 /* douyin.json */; };
+		9F8F5EF12445578B00A27071 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F5EF02445578B00A27071 /* AppDelegate.m */; };
+		9F8F5EF42445578B00A27071 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F5EF32445578B00A27071 /* SceneDelegate.m */; };
+		9F8F5EF72445578B00A27071 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F5EF62445578B00A27071 /* ViewController.m */; };
+		9F8F5EFA2445578B00A27071 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F8F5EF82445578B00A27071 /* Main.storyboard */; };
+		9F8F5EFC2445578F00A27071 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F8F5EFB2445578F00A27071 /* Assets.xcassets */; };
+		9F8F5EFF2445578F00A27071 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F8F5EFD2445578F00A27071 /* LaunchScreen.storyboard */; };
+		9F8F5F022445578F00A27071 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F5F012445578F00A27071 /* main.m */; };
+		9F9592C8244C6FFA0004B439 /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9592C7244C6FFA0004B439 /* AdViewController.m */; };
+		9F976E0B244EB71F009C9C0E /* NDGiftAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F976E03244EB71F009C9C0E /* NDGiftAnimation.m */; };
+		9F976E0C244EB71F009C9C0E /* NDGiftAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F976E04244EB71F009C9C0E /* NDGiftAnimationView.m */; };
+		9F976E0D244EB71F009C9C0E /* NDGiftModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F976E07244EB71F009C9C0E /* NDGiftModel.m */; };
+		9F976E0E244EB71F009C9C0E /* NDGiftAnimationImgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F976E09244EB71F009C9C0E /* NDGiftAnimationImgView.m */; };
+		9F976E11244EBD61009C9C0E /* ChatRoomUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F976E10244EBD61009C9C0E /* ChatRoomUserModel.m */; };
+		9F976E14244EC2A8009C9C0E /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F976E13244EC2A8009C9C0E /* UIView+Frame.m */; };
+		9F976E1D244EF9E5009C9C0E /* NSMutableArray+Check.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F976E1C244EF9E5009C9C0E /* NSMutableArray+Check.m */; };
+		9F976E20244EFCF2009C9C0E /* ZBChatRoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F976E1F244EFCF2009C9C0E /* ZBChatRoomView.m */; };
+		9F98618A2452E06500616229 /* ChatRoomGiftModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9861892452E06500616229 /* ChatRoomGiftModel.m */; };
+		9FA088D02446E05500FAE236 /* LiveRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA088CF2446E05500FAE236 /* LiveRoomViewController.m */; };
+		9FA088D52446E41300FAE236 /* ChatInputBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA088D42446E41300FAE236 /* ChatInputBoardView.m */; };
+		9FA088D82446E6E500FAE236 /* UIView+ZBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA088D72446E6E500FAE236 /* UIView+ZBExtension.m */; };
+		9FA088DB2446E82F00FAE236 /* UITextView+ZBPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA088DA2446E82F00FAE236 /* UITextView+ZBPlaceHolder.m */; };
+		9FA088E42447068A00FAE236 /* ChatRoomMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA088E32447068A00FAE236 /* ChatRoomMessageModel.m */; };
+		9FA088E724470DE100FAE236 /* ChatRoomBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA088E624470DE100FAE236 /* ChatRoomBaseCell.m */; };
+		9FA088EA24470F5900FAE236 /* ChatRoomSystemMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA088E924470F5900FAE236 /* ChatRoomSystemMessageCell.m */; };
+		9FA088ED2447101400FAE236 /* ChatRoomTextMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA088EC2447101400FAE236 /* ChatRoomTextMessageCell.m */; };
+		9FA088F32447192200FAE236 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA088F02447192200FAE236 /* YYWeakProxy.m */; };
+		9FA088F724471E8E00FAE236 /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA088F624471E8E00FAE236 /* YYFPSLabel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0654F647887079EA42DD007F /* Pods-ZBLiveRoom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBLiveRoom.release.xcconfig"; path = "Target Support Files/Pods-ZBLiveRoom/Pods-ZBLiveRoom.release.xcconfig"; sourceTree = "<group>"; };
+		54AFFF6AB2379B9BC75D3155 /* libPods-ZBLiveRoom.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZBLiveRoom.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F4DAA002449992500630680 /* DouYinTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DouYinTableViewCell.h; sourceTree = "<group>"; };
+		9F4DAA012449992500630680 /* DouYinTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DouYinTableViewCell.m; sourceTree = "<group>"; };
+		9F4DAA032449AD3F00630680 /* SPDouYinControlView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPDouYinControlView.h; sourceTree = "<group>"; };
+		9F4DAA042449AD3F00630680 /* SPDouYinControlView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPDouYinControlView.m; sourceTree = "<group>"; };
+		9F8848E524497C300085ACAF /* DouYinViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DouYinViewController.h; sourceTree = "<group>"; };
+		9F8848E624497C300085ACAF /* DouYinViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DouYinViewController.m; sourceTree = "<group>"; };
+		9F8848E824497E540085ACAF /* DouYinModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DouYinModel.h; sourceTree = "<group>"; };
+		9F8848E924497E540085ACAF /* DouYinModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DouYinModel.m; sourceTree = "<group>"; };
+		9F8848EB244980890085ACAF /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		9F8848EC2449871F0085ACAF /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		9F8DFD2E2489F9CE00804EA1 /* BarrageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarrageViewController.h; sourceTree = "<group>"; };
+		9F8DFD2F2489F9CE00804EA1 /* BarrageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarrageViewController.m; sourceTree = "<group>"; };
+		9F8DFD31248A172700804EA1 /* ZBBarrageQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBBarrageQueue.h; sourceTree = "<group>"; };
+		9F8DFD32248A172700804EA1 /* ZBBarrageQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBBarrageQueue.m; sourceTree = "<group>"; };
+		9F8EE56424A4927D00A88649 /* douyin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = douyin.json; sourceTree = "<group>"; };
+		9F8F5EEC2445578B00A27071 /* ZBLiveRoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZBLiveRoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F8F5EEF2445578B00A27071 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9F8F5EF02445578B00A27071 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9F8F5EF22445578B00A27071 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		9F8F5EF32445578B00A27071 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		9F8F5EF52445578B00A27071 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9F8F5EF62445578B00A27071 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9F8F5EF92445578B00A27071 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9F8F5EFB2445578F00A27071 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F8F5EFE2445578F00A27071 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9F8F5F002445578F00A27071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F8F5F012445578F00A27071 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9F9592C6244C6FFA0004B439 /* AdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdViewController.h; sourceTree = "<group>"; };
+		9F9592C7244C6FFA0004B439 /* AdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdViewController.m; sourceTree = "<group>"; };
+		9F976E02244EB71F009C9C0E /* NDGiftModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDGiftModel.h; sourceTree = "<group>"; };
+		9F976E03244EB71F009C9C0E /* NDGiftAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDGiftAnimation.m; sourceTree = "<group>"; };
+		9F976E04244EB71F009C9C0E /* NDGiftAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDGiftAnimationView.m; sourceTree = "<group>"; };
+		9F976E05244EB71F009C9C0E /* EWDispatchAfterBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EWDispatchAfterBlocks.h; sourceTree = "<group>"; };
+		9F976E06244EB71F009C9C0E /* NDGiftAnimationImgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDGiftAnimationImgView.h; sourceTree = "<group>"; };
+		9F976E07244EB71F009C9C0E /* NDGiftModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDGiftModel.m; sourceTree = "<group>"; };
+		9F976E08244EB71F009C9C0E /* NDGiftAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDGiftAnimation.h; sourceTree = "<group>"; };
+		9F976E09244EB71F009C9C0E /* NDGiftAnimationImgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDGiftAnimationImgView.m; sourceTree = "<group>"; };
+		9F976E0A244EB71F009C9C0E /* NDGiftAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDGiftAnimationView.h; sourceTree = "<group>"; };
+		9F976E0F244EBD61009C9C0E /* ChatRoomUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatRoomUserModel.h; sourceTree = "<group>"; };
+		9F976E10244EBD61009C9C0E /* ChatRoomUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatRoomUserModel.m; sourceTree = "<group>"; };
+		9F976E12244EC2A8009C9C0E /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		9F976E13244EC2A8009C9C0E /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		9F976E1B244EF9E5009C9C0E /* NSMutableArray+Check.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Check.h"; sourceTree = "<group>"; };
+		9F976E1C244EF9E5009C9C0E /* NSMutableArray+Check.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Check.m"; sourceTree = "<group>"; };
+		9F976E1E244EFCF2009C9C0E /* ZBChatRoomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBChatRoomView.h; sourceTree = "<group>"; };
+		9F976E1F244EFCF2009C9C0E /* ZBChatRoomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBChatRoomView.m; sourceTree = "<group>"; };
+		9F9861882452E06400616229 /* ChatRoomGiftModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatRoomGiftModel.h; sourceTree = "<group>"; };
+		9F9861892452E06500616229 /* ChatRoomGiftModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRoomGiftModel.m; sourceTree = "<group>"; };
+		9FA088CE2446E05500FAE236 /* LiveRoomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveRoomViewController.h; sourceTree = "<group>"; };
+		9FA088CF2446E05500FAE236 /* LiveRoomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveRoomViewController.m; sourceTree = "<group>"; };
+		9FA088D32446E41300FAE236 /* ChatInputBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatInputBoardView.h; sourceTree = "<group>"; };
+		9FA088D42446E41300FAE236 /* ChatInputBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatInputBoardView.m; sourceTree = "<group>"; };
+		9FA088D62446E6E500FAE236 /* UIView+ZBExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ZBExtension.h"; sourceTree = "<group>"; };
+		9FA088D72446E6E500FAE236 /* UIView+ZBExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZBExtension.m"; sourceTree = "<group>"; };
+		9FA088D92446E82F00FAE236 /* UITextView+ZBPlaceHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+ZBPlaceHolder.h"; sourceTree = "<group>"; };
+		9FA088DA2446E82F00FAE236 /* UITextView+ZBPlaceHolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+ZBPlaceHolder.m"; sourceTree = "<group>"; };
+		9FA088E22447068A00FAE236 /* ChatRoomMessageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatRoomMessageModel.h; sourceTree = "<group>"; };
+		9FA088E32447068A00FAE236 /* ChatRoomMessageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatRoomMessageModel.m; sourceTree = "<group>"; };
+		9FA088E524470DE100FAE236 /* ChatRoomBaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatRoomBaseCell.h; sourceTree = "<group>"; };
+		9FA088E624470DE100FAE236 /* ChatRoomBaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatRoomBaseCell.m; sourceTree = "<group>"; };
+		9FA088E824470F5900FAE236 /* ChatRoomSystemMessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatRoomSystemMessageCell.h; sourceTree = "<group>"; };
+		9FA088E924470F5900FAE236 /* ChatRoomSystemMessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatRoomSystemMessageCell.m; sourceTree = "<group>"; };
+		9FA088EB2447101400FAE236 /* ChatRoomTextMessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatRoomTextMessageCell.h; sourceTree = "<group>"; };
+		9FA088EC2447101400FAE236 /* ChatRoomTextMessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatRoomTextMessageCell.m; sourceTree = "<group>"; };
+		9FA088F02447192200FAE236 /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
+		9FA088F12447192200FAE236 /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
+		9FA088F524471E8E00FAE236 /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
+		9FA088F624471E8E00FAE236 /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
+		CB36116559CA8FEEB535E735 /* Pods-ZBLiveRoom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBLiveRoom.debug.xcconfig"; path = "Target Support Files/Pods-ZBLiveRoom/Pods-ZBLiveRoom.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F8F5EE92445578B00A27071 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8377B10C46329DE7127C4491 /* libPods-ZBLiveRoom.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F8EE56624A5AA4000A88649 /* DouYinView */ = {
+			isa = PBXGroup;
+			children = (
+				9F4DAA002449992500630680 /* DouYinTableViewCell.h */,
+				9F4DAA012449992500630680 /* DouYinTableViewCell.m */,
+				9F4DAA032449AD3F00630680 /* SPDouYinControlView.h */,
+				9F4DAA042449AD3F00630680 /* SPDouYinControlView.m */,
+			);
+			path = DouYinView;
+			sourceTree = "<group>";
+		};
+		9F8F5EE32445578B00A27071 = {
+			isa = PBXGroup;
+			children = (
+				9F8F5EEE2445578B00A27071 /* ZBLiveRoom */,
+				9F8F5EED2445578B00A27071 /* Products */,
+				D72EC7FE55A1B0AA9D8793AB /* Pods */,
+				E66EB54DC397234A799425EB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9F8F5EED2445578B00A27071 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F8F5EEC2445578B00A27071 /* ZBLiveRoom.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F8F5EEE2445578B00A27071 /* ZBLiveRoom */ = {
+			isa = PBXGroup;
+			children = (
+				9FA088D12446E29600FAE236 /* Classes */,
+				9F8F5EEF2445578B00A27071 /* AppDelegate.h */,
+				9F8F5EF02445578B00A27071 /* AppDelegate.m */,
+				9F8F5EF22445578B00A27071 /* SceneDelegate.h */,
+				9F8F5EF32445578B00A27071 /* SceneDelegate.m */,
+				9F8F5EF52445578B00A27071 /* ViewController.h */,
+				9F8F5EF62445578B00A27071 /* ViewController.m */,
+				9F8F5EF82445578B00A27071 /* Main.storyboard */,
+				9F8F5EFB2445578F00A27071 /* Assets.xcassets */,
+				9F8F5EFD2445578F00A27071 /* LaunchScreen.storyboard */,
+				9F8F5F002445578F00A27071 /* Info.plist */,
+				9F8F5F012445578F00A27071 /* main.m */,
+			);
+			path = ZBLiveRoom;
+			sourceTree = "<group>";
+		};
+		9F976DF8244E95EE009C9C0E /* ChatRoomCell */ = {
+			isa = PBXGroup;
+			children = (
+				9FA088E524470DE100FAE236 /* ChatRoomBaseCell.h */,
+				9FA088E624470DE100FAE236 /* ChatRoomBaseCell.m */,
+				9FA088E824470F5900FAE236 /* ChatRoomSystemMessageCell.h */,
+				9FA088E924470F5900FAE236 /* ChatRoomSystemMessageCell.m */,
+				9FA088EB2447101400FAE236 /* ChatRoomTextMessageCell.h */,
+				9FA088EC2447101400FAE236 /* ChatRoomTextMessageCell.m */,
+			);
+			path = ChatRoomCell;
+			sourceTree = "<group>";
+		};
+		9F976DF9244E9656009C9C0E /* ChatRoomView */ = {
+			isa = PBXGroup;
+			children = (
+				9F976E1E244EFCF2009C9C0E /* ZBChatRoomView.h */,
+				9F976E1F244EFCF2009C9C0E /* ZBChatRoomView.m */,
+				9FA088D32446E41300FAE236 /* ChatInputBoardView.h */,
+				9FA088D42446E41300FAE236 /* ChatInputBoardView.m */,
+			);
+			path = ChatRoomView;
+			sourceTree = "<group>";
+		};
+		9F976E01244EB71F009C9C0E /* GiftAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				9F976E12244EC2A8009C9C0E /* UIView+Frame.h */,
+				9F976E13244EC2A8009C9C0E /* UIView+Frame.m */,
+				9F976E02244EB71F009C9C0E /* NDGiftModel.h */,
+				9F976E07244EB71F009C9C0E /* NDGiftModel.m */,
+				9F976E08244EB71F009C9C0E /* NDGiftAnimation.h */,
+				9F976E03244EB71F009C9C0E /* NDGiftAnimation.m */,
+				9F976E0A244EB71F009C9C0E /* NDGiftAnimationView.h */,
+				9F976E04244EB71F009C9C0E /* NDGiftAnimationView.m */,
+				9F976E05244EB71F009C9C0E /* EWDispatchAfterBlocks.h */,
+				9F976E06244EB71F009C9C0E /* NDGiftAnimationImgView.h */,
+				9F976E09244EB71F009C9C0E /* NDGiftAnimationImgView.m */,
+			);
+			path = GiftAnimation;
+			sourceTree = "<group>";
+		};
+		9FA088D12446E29600FAE236 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9FA088DC2446E9A500FAE236 /* Categroy */,
+				9FA088EE244718EA00FAE236 /* Libraries */,
+				9FA088E12447067500FAE236 /* Models */,
+				9FA088DD244703C900FAE236 /* Controllers */,
+				9FA088D22446E3F100FAE236 /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9FA088D22446E3F100FAE236 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9F8EE56624A5AA4000A88649 /* DouYinView */,
+				9F976DF9244E9656009C9C0E /* ChatRoomView */,
+				9F976DF8244E95EE009C9C0E /* ChatRoomCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9FA088DC2446E9A500FAE236 /* Categroy */ = {
+			isa = PBXGroup;
+			children = (
+				9FA088D62446E6E500FAE236 /* UIView+ZBExtension.h */,
+				9FA088D72446E6E500FAE236 /* UIView+ZBExtension.m */,
+				9FA088D92446E82F00FAE236 /* UITextView+ZBPlaceHolder.h */,
+				9FA088DA2446E82F00FAE236 /* UITextView+ZBPlaceHolder.m */,
+				9F976E1B244EF9E5009C9C0E /* NSMutableArray+Check.h */,
+				9F976E1C244EF9E5009C9C0E /* NSMutableArray+Check.m */,
+			);
+			path = Categroy;
+			sourceTree = "<group>";
+		};
+		9FA088DD244703C900FAE236 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9FA088CE2446E05500FAE236 /* LiveRoomViewController.h */,
+				9FA088CF2446E05500FAE236 /* LiveRoomViewController.m */,
+				9F8848E524497C300085ACAF /* DouYinViewController.h */,
+				9F8848E624497C300085ACAF /* DouYinViewController.m */,
+				9F9592C6244C6FFA0004B439 /* AdViewController.h */,
+				9F9592C7244C6FFA0004B439 /* AdViewController.m */,
+				9F8DFD2E2489F9CE00804EA1 /* BarrageViewController.h */,
+				9F8DFD2F2489F9CE00804EA1 /* BarrageViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9FA088E12447067500FAE236 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9F8EE56424A4927D00A88649 /* douyin.json */,
+				9F8848EC2449871F0085ACAF /* data.json */,
+				9F9861882452E06400616229 /* ChatRoomGiftModel.h */,
+				9F9861892452E06500616229 /* ChatRoomGiftModel.m */,
+				9F976E0F244EBD61009C9C0E /* ChatRoomUserModel.h */,
+				9F976E10244EBD61009C9C0E /* ChatRoomUserModel.m */,
+				9FA088E22447068A00FAE236 /* ChatRoomMessageModel.h */,
+				9FA088E32447068A00FAE236 /* ChatRoomMessageModel.m */,
+				9F8848E824497E540085ACAF /* DouYinModel.h */,
+				9F8848E924497E540085ACAF /* DouYinModel.m */,
+				9F8848EB244980890085ACAF /* Macro.h */,
+				9F8DFD31248A172700804EA1 /* ZBBarrageQueue.h */,
+				9F8DFD32248A172700804EA1 /* ZBBarrageQueue.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9FA088EE244718EA00FAE236 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				9F976E01244EB71F009C9C0E /* GiftAnimation */,
+				9FA088F524471E8E00FAE236 /* YYFPSLabel.h */,
+				9FA088F624471E8E00FAE236 /* YYFPSLabel.m */,
+				9FA088F12447192200FAE236 /* YYWeakProxy.h */,
+				9FA088F02447192200FAE236 /* YYWeakProxy.m */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		D72EC7FE55A1B0AA9D8793AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB36116559CA8FEEB535E735 /* Pods-ZBLiveRoom.debug.xcconfig */,
+				0654F647887079EA42DD007F /* Pods-ZBLiveRoom.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E66EB54DC397234A799425EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54AFFF6AB2379B9BC75D3155 /* libPods-ZBLiveRoom.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F8F5EEB2445578B00A27071 /* ZBLiveRoom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F8F5F052445578F00A27071 /* Build configuration list for PBXNativeTarget "ZBLiveRoom" */;
+			buildPhases = (
+				D4EF207E8D56CDA1E630623C /* [CP] Check Pods Manifest.lock */,
+				9F8F5EE82445578B00A27071 /* Sources */,
+				9F8F5EE92445578B00A27071 /* Frameworks */,
+				9F8F5EEA2445578B00A27071 /* Resources */,
+				CDFC1CB92859353945929B5E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZBLiveRoom;
+			productName = ZBLiveRoom;
+			productReference = 9F8F5EEC2445578B00A27071 /* ZBLiveRoom.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F8F5EE42445578B00A27071 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Suzhibin;
+				TargetAttributes = {
+					9F8F5EEB2445578B00A27071 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 9F8F5EE72445578B00A27071 /* Build configuration list for PBXProject "ZBLiveRoom" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F8F5EE32445578B00A27071;
+			productRefGroup = 9F8F5EED2445578B00A27071 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F8F5EEB2445578B00A27071 /* ZBLiveRoom */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F8F5EEA2445578B00A27071 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F8F5EFF2445578F00A27071 /* LaunchScreen.storyboard in Resources */,
+				9F8F5EFC2445578F00A27071 /* Assets.xcassets in Resources */,
+				9F8F5EFA2445578B00A27071 /* Main.storyboard in Resources */,
+				9F8848ED2449871F0085ACAF /* data.json in Resources */,
+				9F8EE56524A4927D00A88649 /* douyin.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CDFC1CB92859353945929B5E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZBLiveRoom/Pods-ZBLiveRoom-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZBLiveRoom/Pods-ZBLiveRoom-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZBLiveRoom/Pods-ZBLiveRoom-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4EF207E8D56CDA1E630623C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZBLiveRoom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F8F5EE82445578B00A27071 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F9592C8244C6FFA0004B439 /* AdViewController.m in Sources */,
+				9FA088F724471E8E00FAE236 /* YYFPSLabel.m in Sources */,
+				9F8848EA24497E540085ACAF /* DouYinModel.m in Sources */,
+				9FA088D52446E41300FAE236 /* ChatInputBoardView.m in Sources */,
+				9F8DFD302489F9CE00804EA1 /* BarrageViewController.m in Sources */,
+				9F8F5EF72445578B00A27071 /* ViewController.m in Sources */,
+				9F976E0C244EB71F009C9C0E /* NDGiftAnimationView.m in Sources */,
+				9FA088D02446E05500FAE236 /* LiveRoomViewController.m in Sources */,
+				9F976E0E244EB71F009C9C0E /* NDGiftAnimationImgView.m in Sources */,
+				9F98618A2452E06500616229 /* ChatRoomGiftModel.m in Sources */,
+				9F976E0B244EB71F009C9C0E /* NDGiftAnimation.m in Sources */,
+				9FA088E42447068A00FAE236 /* ChatRoomMessageModel.m in Sources */,
+				9F8F5EF12445578B00A27071 /* AppDelegate.m in Sources */,
+				9F8F5F022445578F00A27071 /* main.m in Sources */,
+				9FA088DB2446E82F00FAE236 /* UITextView+ZBPlaceHolder.m in Sources */,
+				9F976E11244EBD61009C9C0E /* ChatRoomUserModel.m in Sources */,
+				9F976E0D244EB71F009C9C0E /* NDGiftModel.m in Sources */,
+				9F976E20244EFCF2009C9C0E /* ZBChatRoomView.m in Sources */,
+				9F4DAA052449AD3F00630680 /* SPDouYinControlView.m in Sources */,
+				9FA088F32447192200FAE236 /* YYWeakProxy.m in Sources */,
+				9F8F5EF42445578B00A27071 /* SceneDelegate.m in Sources */,
+				9FA088EA24470F5900FAE236 /* ChatRoomSystemMessageCell.m in Sources */,
+				9F8848E724497C300085ACAF /* DouYinViewController.m in Sources */,
+				9F8DFD33248A172700804EA1 /* ZBBarrageQueue.m in Sources */,
+				9FA088D82446E6E500FAE236 /* UIView+ZBExtension.m in Sources */,
+				9F976E14244EC2A8009C9C0E /* UIView+Frame.m in Sources */,
+				9FA088E724470DE100FAE236 /* ChatRoomBaseCell.m in Sources */,
+				9F976E1D244EF9E5009C9C0E /* NSMutableArray+Check.m in Sources */,
+				9FA088ED2447101400FAE236 /* ChatRoomTextMessageCell.m in Sources */,
+				9F4DAA022449992500630680 /* DouYinTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9F8F5EF82445578B00A27071 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F8F5EF92445578B00A27071 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9F8F5EFD2445578F00A27071 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F8F5EFE2445578F00A27071 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F8F5F032445578F00A27071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9F8F5F042445578F00A27071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F8F5F062445578F00A27071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB36116559CA8FEEB535E735 /* Pods-ZBLiveRoom.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E6LU458855;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = ZBLiveRoom/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.ZBLiveRoom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F8F5F072445578F00A27071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0654F647887079EA42DD007F /* Pods-ZBLiveRoom.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E6LU458855;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = ZBLiveRoom/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.ZBLiveRoom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F8F5EE72445578B00A27071 /* Build configuration list for PBXProject "ZBLiveRoom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F8F5F032445578F00A27071 /* Debug */,
+				9F8F5F042445578F00A27071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F8F5F052445578F00A27071 /* Build configuration list for PBXNativeTarget "ZBLiveRoom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F8F5F062445578F00A27071 /* Debug */,
+				9F8F5F072445578F00A27071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F8F5EE42445578B00A27071 /* Project object */;
+}
