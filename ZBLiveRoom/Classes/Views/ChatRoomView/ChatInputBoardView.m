@@ -11,7 +11,7 @@
 #import "UITextView+ZBPlaceHolder.h"
 @interface ChatInputBoardView()
 //当前的编辑状态
-@property(nonatomic,assign)BJXChatKeyBoardStatus keyBoardStatus;
+@property(nonatomic,assign)ChatKeyBoardStatus keyBoardStatus;
 
 @property(nonatomic,assign)CGFloat changeTime;
 @property(nonatomic,assign)CGFloat keyBoardHieght;//键盘的高度
@@ -37,7 +37,7 @@
        
         self.frame = CGRectMake(0, MAIN_SCREEN_HEIGHT-ChatKeyBoardInputViewH-safeAreaBottomHeight, MAIN_SCREEN_WIDTH, ChatKeyBoardInputViewH);
         
-        _keyBoardStatus = BJXChatKeyBoardStatusDefault;
+        _keyBoardStatus = ChatKeyBoardStatusDefault;
         _keyBoardHieght = 0;
         _changeTime = 0.25;
        //_maxFontNum=200;
@@ -133,7 +133,7 @@
         }
         height = safeAreaBottomHeight;
     }else{
-        self.keyBoardStatus = BJXChatKeyBoardStatusEdit;
+        self.keyBoardStatus = ChatKeyBoardStatusEdit;
         self.sendBtn.selected = NO;
         if(height==safeAreaBottomHeight || height==0){
             height = _keyBoardHieght;
@@ -152,7 +152,7 @@
     [self setNewSizeWithController];
 
     [UIView animateWithDuration:_changeTime animations:^{
-        if(self.keyBoardStatus == BJXChatKeyBoardStatusDefault){
+        if(self.keyBoardStatus == ChatKeyBoardStatusDefault){
             self.bottom = MAIN_SCREEN_HEIGHT-safeAreaBottomHeight;
         }else{
             self.bottom = MAIN_SCREEN_HEIGHT-self.keyBoardHieght;
@@ -162,10 +162,10 @@
 }
 
 //设置默认状态
--(void)setKeyBoardStatus:(BJXChatKeyBoardStatus)keyBoardStatus{
+-(void)setKeyBoardStatus:(ChatKeyBoardStatus)keyBoardStatus{
     _keyBoardStatus = keyBoardStatus;
     
-    if(_keyBoardStatus == BJXChatKeyBoardStatusDefault){
+    if(_keyBoardStatus == ChatKeyBoardStatusDefault){
         self.sendBtn.selected = NO;
         self.mTextView.hidden = NO;
     }
@@ -175,7 +175,7 @@
     if (self.issue==YES) {
         self.hidden=YES;
     }
-    self.keyBoardStatus = BJXChatKeyBoardStatusDefault;
+    self.keyBoardStatus = ChatKeyBoardStatusDefault;
     [self endEditing:YES];
     self.keyBoardHieght = 0.0;
 }
@@ -200,7 +200,7 @@
         self.textCountLabel.top = 8;
         self.sendBtn.bottom = self.height-ChatBBottomDistence;
         
-        if(self.keyBoardStatus == BJXChatKeyBoardStatusDefault ){
+        if(self.keyBoardStatus == ChatKeyBoardStatusDefault ){
             self.bottom = MAIN_SCREEN_HEIGHT-safeAreaBottomHeight;
         }else{
             self.bottom = MAIN_SCREEN_HEIGHT-self.keyBoardHieght;

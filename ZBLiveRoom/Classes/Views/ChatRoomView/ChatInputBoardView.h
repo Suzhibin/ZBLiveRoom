@@ -35,10 +35,10 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  底部按钮点击的状态
  */
-typedef NS_ENUM(NSInteger,BJXChatKeyBoardStatus) {
-    BJXChatKeyBoardStatusDefault=1,//默认在底部的状态
-    BJXChatKeyBoardStatusEdit,//准备编辑文本的状态
-    BJXChatKeyBoardStatusAdd//其他状态
+typedef NS_ENUM(NSInteger,ChatKeyBoardStatus) {
+    ChatKeyBoardStatusDefault=1,//默认在底部的状态
+    ChatKeyBoardStatusEdit,//准备编辑文本的状态
+    ChatKeyBoardStatusAdd//其他状态
 };
 @protocol ChatInputBoardViewDelegate <NSObject>
 @optional
