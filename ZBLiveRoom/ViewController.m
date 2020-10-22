@@ -15,6 +15,7 @@
 #import <SuperPlayer/SuperPlayer.h>
 #import "BarrageViewController.h"
 #import "ZBBarrageQueue.h"
+#import "BanMaAiViewController.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong)NSArray *conmentAry;
 @property (nonatomic,strong)NSArray *nameAry;
@@ -32,7 +33,7 @@
     
 
     [self.view addSubview:self.tableView];
-    self.dataArray=[NSMutableArray arrayWithObjects:@"直播间",@"抖音",@"广告+正片",@"播放视频（弹幕绑定视频播放时间）",nil];
+    self.dataArray=[NSMutableArray arrayWithObjects:@"直播间",@"抖音",@"广告+正片",@"播放视频（弹幕绑定视频播放时间",nil];
     [self.tableView reloadData];
 }
 

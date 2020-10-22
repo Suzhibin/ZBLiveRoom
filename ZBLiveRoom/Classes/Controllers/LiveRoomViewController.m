@@ -139,8 +139,8 @@
     坑二
     模拟器 播放视频 帧数很低 20-30fps吧 使用真机正常 基本57-60fps
      */
-    playerModel.videoURL=@"http://5815.liveplay.myqcloud.com/live/5815_89aad37e06ff11e892905cb9018cf0d4_900.flv";
-   // playerModel.videoURL=@"http://1252463788.vod2.myqcloud.com/95576ef5vodtransgzp1252463788/28742df34564972819219071568/master_playlist.m3u8";
+   // playerModel.videoURL=@"http://5815.liveplay.myqcloud.com/live/5815_89aad37e06ff11e892905cb9018cf0d4_900.flv";
+    playerModel.videoURL=@"http://1252463788.vod2.myqcloud.com/95576ef5vodtransgzp1252463788/28742df34564972819219071568/master_playlist.m3u8";
     [_playerView.coverImageView sd_setImageWithURL:[NSURL URLWithString:@"http://1252463788.vod2.myqcloud.com/e12fcc4dvodgzp1252463788/28742df34564972819219071568/4564972819209692959.jpeg"]];
     [_playerView playWithModel:playerModel];
 }

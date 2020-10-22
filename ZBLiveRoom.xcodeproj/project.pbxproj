@@ -43,6 +43,7 @@
 		9FA088ED2447101400FAE236 /* ChatRoomTextMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA088EC2447101400FAE236 /* ChatRoomTextMessageCell.m */; };
 		9FA088F32447192200FAE236 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA088F02447192200FAE236 /* YYWeakProxy.m */; };
 		9FA088F724471E8E00FAE236 /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA088F624471E8E00FAE236 /* YYFPSLabel.m */; };
+		9FFCF1A8252D793200A8B984 /* BanMaAiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFCF1A7252D793200A8B984 /* BanMaAiViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,6 +117,8 @@
 		9FA088F12447192200FAE236 /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
 		9FA088F524471E8E00FAE236 /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
 		9FA088F624471E8E00FAE236 /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
+		9FFCF1A6252D793200A8B984 /* BanMaAiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BanMaAiViewController.h; sourceTree = "<group>"; };
+		9FFCF1A7252D793200A8B984 /* BanMaAiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BanMaAiViewController.m; sourceTree = "<group>"; };
 		CB36116559CA8FEEB535E735 /* Pods-ZBLiveRoom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBLiveRoom.debug.xcconfig"; path = "Target Support Files/Pods-ZBLiveRoom/Pods-ZBLiveRoom.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -267,6 +270,8 @@
 				9F9592C7244C6FFA0004B439 /* AdViewController.m */,
 				9F8DFD2E2489F9CE00804EA1 /* BarrageViewController.h */,
 				9F8DFD2F2489F9CE00804EA1 /* BarrageViewController.m */,
+				9FFCF1A6252D793200A8B984 /* BanMaAiViewController.h */,
+				9FFCF1A7252D793200A8B984 /* BanMaAiViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -449,6 +454,7 @@
 				9F976E0B244EB71F009C9C0E /* NDGiftAnimation.m in Sources */,
 				9FA088E42447068A00FAE236 /* ChatRoomMessageModel.m in Sources */,
 				9F8F5EF12445578B00A27071 /* AppDelegate.m in Sources */,
+				9FFCF1A8252D793200A8B984 /* BanMaAiViewController.m in Sources */,
 				9F8F5F022445578F00A27071 /* main.m in Sources */,
 				9FA088DB2446E82F00FAE236 /* UITextView+ZBPlaceHolder.m in Sources */,
 				9F976E11244EBD61009C9C0E /* ChatRoomUserModel.m in Sources */,

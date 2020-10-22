@@ -1,8 +1,8 @@
 //
-//  ZFPlayer.h
+//  ZFLandScaprWindow.h
 //  ZFPlayer
 //
-// Copyright (c) 2016年 任子丰 ( http://github.com/renzifeng )
+// Copyright (c) 2020年 任子丰 ( http://github.com/renzifeng )
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -22,17 +22,15 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "ZFLandscapeViewController.h"
 
-//! Project version number for ZFPlayer.
-FOUNDATION_EXPORT double ZFPlayerVersionNumber;
+NS_ASSUME_NONNULL_BEGIN
 
-//! Project version string for ZFPlayer.
-FOUNDATION_EXPORT const unsigned char ZFPlayerVersionString[];
+@interface ZFLandscapeWindow : UIWindow
 
-#import "ZFPlayerController.h"
-#import "ZFPlayerMediaControl.h"
-#import "ZFKVOController.h"
-#import "UIScrollView+ZFPlayer.h"
-#import "ZFPlayerLogManager.h"
-#import "ZFPlayerConst.h"
+@property (nonatomic, strong, readonly) ZFLandscapeViewController *landscapeViewController;
+
+@end
+
+NS_ASSUME_NONNULL_END

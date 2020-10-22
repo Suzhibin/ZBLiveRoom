@@ -1,8 +1,8 @@
 //
-//  ZFPlayer.h
+//  ZFPresentTransition.h
 //  ZFPlayer
 //
-// Copyright (c) 2016年 任子丰 ( http://github.com/renzifeng )
+// Copyright (c) 2020年 任子丰 ( http://github.com/renzifeng )
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -22,17 +22,28 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "ZFOrientationObserver.h"
 
-//! Project version number for ZFPlayer.
-FOUNDATION_EXPORT double ZFPlayerVersionNumber;
+typedef NS_ENUM(NSUInteger, ZFPresentTransitionType) {
+    ZFPresentTransitionTypePresent,
+    ZFPresentTransitionTypeDismiss,
+};
 
-//! Project version string for ZFPlayer.
-FOUNDATION_EXPORT const unsigned char ZFPlayerVersionString[];
+@interface ZFPresentTransition : NSObject<UIViewControllerAnimatedTransitioning>
 
-#import "ZFPlayerController.h"
-#import "ZFPlayerMediaControl.h"
-#import "ZFKVOController.h"
-#import "UIScrollView+ZFPlayer.h"
-#import "ZFPlayerLogManager.h"
-#import "ZFPlayerConst.h"
+@property (nonatomic, weak) id<ZFPortraitOrientationDelegate> delagate;
+
+@property (nonatomic, assign) CGRect contentFullScreenRect;
+
+@property (nonatomic, assign, getter=isFullScreen) BOOL fullScreen;
+
+@property (nonatomic, assign) BOOL interation;
+
+@property (nonatomic, assign) NSTimeInterval duration;
+
+- (void)transitionWithTransitionType:(ZFPresentTransitionType)type
+                         contentView:(UIView *)contentView
+                       containerView:(UIView *)containerView;
+
+@end

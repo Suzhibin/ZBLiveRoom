@@ -205,10 +205,8 @@ Scroll to indexPath with position.
 /// The video contrainerView in normal model.
 @property (nonatomic, strong) UIView *zf_containerView;
 
-
 /// The video contrainerView type.
 @property (nonatomic, assign) ZFPlayerContainerType zf_containerType;
-
 
 /// Filter the cell that should be played when the scroll is stopped (to play when the scroll is stopped).
 - (void)zf_filterShouldPlayCellWhileScrolled:(void (^ __nullable)(NSIndexPath *indexPath))handler;

@@ -1,8 +1,8 @@
 //
-//  ZFPlayer.h
+//  ZFPersentInteractiveTransition.h
 //  ZFPlayer
 //
-// Copyright (c) 2016年 任子丰 ( http://github.com/renzifeng )
+// Copyright (c) 2020年 任子丰 ( http://github.com/renzifeng )
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,18 +21,27 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
+//
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "ZFOrientationObserver.h"
 
-//! Project version number for ZFPlayer.
-FOUNDATION_EXPORT double ZFPlayerVersionNumber;
+@interface ZFPersentInteractiveTransition : UIPercentDrivenInteractiveTransition
 
-//! Project version string for ZFPlayer.
-FOUNDATION_EXPORT const unsigned char ZFPlayerVersionString[];
+@property (nonatomic, weak) id<ZFPortraitOrientationDelegate> delagate;
 
-#import "ZFPlayerController.h"
-#import "ZFPlayerMediaControl.h"
-#import "ZFKVOController.h"
-#import "UIScrollView+ZFPlayer.h"
-#import "ZFPlayerLogManager.h"
-#import "ZFPlayerConst.h"
+@property (nonatomic, assign) BOOL interation;
+
+/// default is ZFDisablePortraitGestureTypesNone.
+@property (nonatomic, assign) ZFDisablePortraitGestureTypes disablePortraitGestureTypes;
+
+@property (nonatomic, assign) BOOL fullScreenAnimation;
+
+@property (nonatomic, assign) CGRect contentFullScreenRect;
+
+@property (nonatomic, weak) UIViewController *viewController;
+
+- (void)updateContentView:(UIView *)contenView
+            containerView:(UIView *)containerView;
+
+@end

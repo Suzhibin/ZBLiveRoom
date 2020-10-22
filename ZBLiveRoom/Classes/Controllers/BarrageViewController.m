@@ -68,7 +68,7 @@
     [self.view addSubview:self.containerView];
     ZFAVPlayerManager *playerManager = [[ZFAVPlayerManager alloc] init];
     self.player = [[ZFPlayerController alloc] initWithPlayerManager:playerManager containerView:self.containerView];/// 播放器相关
-    self.player.forceDeviceOrientation = YES;/// 适配横屏键盘，这里强制横屏处理
+
     self.player.controlView = self.controlView;
     @weakify(self) /// 屏幕改变
     self.player.orientationWillChange = ^(ZFPlayerController * _Nonnull player, BOOL isFullScreen) {
