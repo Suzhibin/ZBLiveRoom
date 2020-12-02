@@ -1,7 +1,6 @@
 # ZBLiveRoom
 目前有:  直播间,抖音短视频,视频广告,弹幕绑定时间
 
-## 直播间,弹幕绑定时间
 
 iOS直播间,弹幕绑定时间 文档请看[iOS视频直播笔记](https://www.jianshu.com/p/c81da8d2228f)
 
