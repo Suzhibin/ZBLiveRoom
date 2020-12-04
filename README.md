@@ -6,7 +6,7 @@ iOS直播间,弹幕绑定时间 文档请看[iOS视频直播笔记](https://www.
 
 包括 播放器，聊天室，弹幕，礼物，输入框等功能，
 
-AI视频互动课 文档请看[iOS视频直播笔记](https://www.jianshu.com/p/b73b6001d3e6)
+AI视频互动课 文档请看[iOS AI视频互动课的实现](https://www.jianshu.com/p/b73b6001d3e6)
 
 
 因为项目里的直播用到了TXLiteAVSDK_Player 比较大，下载可能比较慢
