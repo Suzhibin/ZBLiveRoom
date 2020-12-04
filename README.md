@@ -9,6 +9,6 @@ iOS直播间,弹幕绑定时间 文档请看[iOS视频直播笔记](https://www.
 AI视频互动课 文档请看[iOS视频直播笔记](https://www.jianshu.com/p/b73b6001d3e6)
 
 
-因为项目里的直播用到了TXLiteAVSDK_Player 比较大超过gidhub限制
+因为项目里的直播用到了TXLiteAVSDK_Player 比较大，下载可能比较慢
 
-下载项目 需要pod install 才能运行
+如果报错，需要pod install 才能运行
