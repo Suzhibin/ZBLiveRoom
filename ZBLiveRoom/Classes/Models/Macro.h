@@ -8,7 +8,7 @@
 
 #ifndef Macro_h
 #define Macro_h
-
+#define BanMaServer @"https://conan-online.fbcontent.cn"
 #define k_safeAreaBottomHeight (CGFloat)(IS_IPhoneX_All?(34.0):(0.0))
 #define k_safeAreaTopHeight (CGFloat)(IS_IPhoneX_All?(44.0):(22.0))
 #define k_NAVBAR_HEIGHT       self.navigationController.navigationBar.frame.size.height

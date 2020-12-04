@@ -33,7 +33,7 @@
     
 
     [self.view addSubview:self.tableView];
-    self.dataArray=[NSMutableArray arrayWithObjects:@"直播间",@"抖音",@"广告+正片",@"播放视频（弹幕绑定视频播放时间",nil];
+    self.dataArray=[NSMutableArray arrayWithObjects:@"直播间",@"抖音",@"广告+正片",@"播放视频（弹幕绑定视频播放时间）",@"斑马AI课",nil];
     [self.tableView reloadData];
 }
 
@@ -70,6 +70,11 @@
     }else if(indexPath.row==3){
         BarrageViewController *bVC=[[BarrageViewController alloc]init];
         [self.navigationController pushViewController:bVC animated:YES];
+    }else if(indexPath.row==4){
+        BanMaAiViewController*aiVC=[[BanMaAiViewController alloc]init];
+//        UINavigationController *pushNav = [[UINavigationController alloc] initWithRootViewController:aiVC];
+//        pushNav.modalPresentationStyle = UIModalPresentationFullScreen;
+        [self presentViewController:aiVC animated:YES completion:nil];
     }
  
 }

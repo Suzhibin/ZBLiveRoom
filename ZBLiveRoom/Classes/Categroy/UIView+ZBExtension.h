@@ -21,6 +21,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) CGFloat centerY;     ///< Shortcut for center.y
 @property (nonatomic) CGPoint origin;      ///< Shortcut for frame.origin.
 @property (nonatomic) CGSize  size;        ///< Shortcut for frame.size.
+
+/**
+ *  找到当前的view所在的Controller
+ *
+ *  @return 返回该Controller
+ */
+- (UIViewController *)findeCurrentViewController;
 @end
 
 NS_ASSUME_NONNULL_END

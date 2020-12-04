@@ -16,6 +16,7 @@
 		9F8DFD302489F9CE00804EA1 /* BarrageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F8DFD2F2489F9CE00804EA1 /* BarrageViewController.m */; };
 		9F8DFD33248A172700804EA1 /* ZBBarrageQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F8DFD32248A172700804EA1 /* ZBBarrageQueue.m */; };
 		9F8EE56524A4927D00A88649 /* douyin.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F8EE56424A4927D00A88649 /* douyin.json */; };
+		9F8F3BAF25764CB8002604E2 /* ScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F3BAE25764CB8002604E2 /* ScoreView.m */; };
 		9F8F5EF12445578B00A27071 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F5EF02445578B00A27071 /* AppDelegate.m */; };
 		9F8F5EF42445578B00A27071 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F5EF32445578B00A27071 /* SceneDelegate.m */; };
 		9F8F5EF72445578B00A27071 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F5EF62445578B00A27071 /* ViewController.m */; };
@@ -33,6 +34,8 @@
 		9F976E1D244EF9E5009C9C0E /* NSMutableArray+Check.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F976E1C244EF9E5009C9C0E /* NSMutableArray+Check.m */; };
 		9F976E20244EFCF2009C9C0E /* ZBChatRoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F976E1F244EFCF2009C9C0E /* ZBChatRoomView.m */; };
 		9F98618A2452E06500616229 /* ChatRoomGiftModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9861892452E06500616229 /* ChatRoomGiftModel.m */; };
+		9F9CC2552575DC2900BAABBD /* UIViewController+ZBKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9CC2532575DC2900BAABBD /* UIViewController+ZBKit.m */; };
+		9F9CC2632575FABD00BAABBD /* GameSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9CC2622575FABD00BAABBD /* GameSubView.m */; };
 		9FA088D02446E05500FAE236 /* LiveRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA088CF2446E05500FAE236 /* LiveRoomViewController.m */; };
 		9FA088D52446E41300FAE236 /* ChatInputBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA088D42446E41300FAE236 /* ChatInputBoardView.m */; };
 		9FA088D82446E6E500FAE236 /* UIView+ZBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA088D72446E6E500FAE236 /* UIView+ZBExtension.m */; };
@@ -43,6 +46,9 @@
 		9FA088ED2447101400FAE236 /* ChatRoomTextMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA088EC2447101400FAE236 /* ChatRoomTextMessageCell.m */; };
 		9FA088F32447192200FAE236 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA088F02447192200FAE236 /* YYWeakProxy.m */; };
 		9FA088F724471E8E00FAE236 /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA088F624471E8E00FAE236 /* YYFPSLabel.m */; };
+		9FA14C722578D45A000BC6E3 /* ZBGameQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA14C712578D45A000BC6E3 /* ZBGameQueue.m */; };
+		9FE3B94A2574DD7A0057CA50 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE3B9492574DD7A0057CA50 /* GameViewController.m */; };
+		9FF9162C2579C5ED00F2F367 /* S2U0W2D4_720_course_c4b0c16f3746ee2fb29eeae486cf36ad.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9FF9162B2579C5ED00F2F367 /* S2U0W2D4_720_course_c4b0c16f3746ee2fb29eeae486cf36ad.mp4 */; };
 		9FFCF1A8252D793200A8B984 /* BanMaAiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFCF1A7252D793200A8B984 /* BanMaAiViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +70,8 @@
 		9F8DFD31248A172700804EA1 /* ZBBarrageQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBBarrageQueue.h; sourceTree = "<group>"; };
 		9F8DFD32248A172700804EA1 /* ZBBarrageQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBBarrageQueue.m; sourceTree = "<group>"; };
 		9F8EE56424A4927D00A88649 /* douyin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = douyin.json; sourceTree = "<group>"; };
+		9F8F3BAD25764CB8002604E2 /* ScoreView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScoreView.h; sourceTree = "<group>"; };
+		9F8F3BAE25764CB8002604E2 /* ScoreView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoreView.m; sourceTree = "<group>"; };
 		9F8F5EEC2445578B00A27071 /* ZBLiveRoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZBLiveRoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F8F5EEF2445578B00A27071 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9F8F5EF02445578B00A27071 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -97,6 +105,10 @@
 		9F976E1F244EFCF2009C9C0E /* ZBChatRoomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBChatRoomView.m; sourceTree = "<group>"; };
 		9F9861882452E06400616229 /* ChatRoomGiftModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatRoomGiftModel.h; sourceTree = "<group>"; };
 		9F9861892452E06500616229 /* ChatRoomGiftModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRoomGiftModel.m; sourceTree = "<group>"; };
+		9F9CC2532575DC2900BAABBD /* UIViewController+ZBKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ZBKit.m"; sourceTree = "<group>"; };
+		9F9CC2542575DC2900BAABBD /* UIViewController+ZBKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ZBKit.h"; sourceTree = "<group>"; };
+		9F9CC2612575FABD00BAABBD /* GameSubView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameSubView.h; sourceTree = "<group>"; };
+		9F9CC2622575FABD00BAABBD /* GameSubView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameSubView.m; sourceTree = "<group>"; };
 		9FA088CE2446E05500FAE236 /* LiveRoomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveRoomViewController.h; sourceTree = "<group>"; };
 		9FA088CF2446E05500FAE236 /* LiveRoomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveRoomViewController.m; sourceTree = "<group>"; };
 		9FA088D32446E41300FAE236 /* ChatInputBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatInputBoardView.h; sourceTree = "<group>"; };
@@ -117,6 +129,11 @@
 		9FA088F12447192200FAE236 /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
 		9FA088F524471E8E00FAE236 /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
 		9FA088F624471E8E00FAE236 /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
+		9FA14C702578D45A000BC6E3 /* ZBGameQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBGameQueue.h; sourceTree = "<group>"; };
+		9FA14C712578D45A000BC6E3 /* ZBGameQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBGameQueue.m; sourceTree = "<group>"; };
+		9FE3B9482574DD7A0057CA50 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		9FE3B9492574DD7A0057CA50 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		9FF9162B2579C5ED00F2F367 /* S2U0W2D4_720_course_c4b0c16f3746ee2fb29eeae486cf36ad.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = S2U0W2D4_720_course_c4b0c16f3746ee2fb29eeae486cf36ad.mp4; sourceTree = "<group>"; };
 		9FFCF1A6252D793200A8B984 /* BanMaAiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BanMaAiViewController.h; sourceTree = "<group>"; };
 		9FFCF1A7252D793200A8B984 /* BanMaAiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BanMaAiViewController.m; sourceTree = "<group>"; };
 		CB36116559CA8FEEB535E735 /* Pods-ZBLiveRoom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBLiveRoom.debug.xcconfig"; path = "Target Support Files/Pods-ZBLiveRoom/Pods-ZBLiveRoom.debug.xcconfig"; sourceTree = "<group>"; };
@@ -224,6 +241,17 @@
 			path = GiftAnimation;
 			sourceTree = "<group>";
 		};
+		9F9CC2602575FA8700BAABBD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9F9CC2612575FABD00BAABBD /* GameSubView.h */,
+				9F9CC2622575FABD00BAABBD /* GameSubView.m */,
+				9F8F3BAD25764CB8002604E2 /* ScoreView.h */,
+				9F8F3BAE25764CB8002604E2 /* ScoreView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		9FA088D12446E29600FAE236 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,24 +259,15 @@
 				9FA088EE244718EA00FAE236 /* Libraries */,
 				9FA088E12447067500FAE236 /* Models */,
 				9FA088DD244703C900FAE236 /* Controllers */,
-				9FA088D22446E3F100FAE236 /* Views */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		9FA088D22446E3F100FAE236 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				9F8EE56624A5AA4000A88649 /* DouYinView */,
-				9F976DF9244E9656009C9C0E /* ChatRoomView */,
-				9F976DF8244E95EE009C9C0E /* ChatRoomCell */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		9FA088DC2446E9A500FAE236 /* Categroy */ = {
 			isa = PBXGroup;
 			children = (
+				9F9CC2542575DC2900BAABBD /* UIViewController+ZBKit.h */,
+				9F9CC2532575DC2900BAABBD /* UIViewController+ZBKit.m */,
 				9FA088D62446E6E500FAE236 /* UIView+ZBExtension.h */,
 				9FA088D72446E6E500FAE236 /* UIView+ZBExtension.m */,
 				9FA088D92446E82F00FAE236 /* UITextView+ZBPlaceHolder.h */,
@@ -262,16 +281,11 @@
 		9FA088DD244703C900FAE236 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9FA088CE2446E05500FAE236 /* LiveRoomViewController.h */,
-				9FA088CF2446E05500FAE236 /* LiveRoomViewController.m */,
-				9F8848E524497C300085ACAF /* DouYinViewController.h */,
-				9F8848E624497C300085ACAF /* DouYinViewController.m */,
-				9F9592C6244C6FFA0004B439 /* AdViewController.h */,
-				9F9592C7244C6FFA0004B439 /* AdViewController.m */,
-				9F8DFD2E2489F9CE00804EA1 /* BarrageViewController.h */,
-				9F8DFD2F2489F9CE00804EA1 /* BarrageViewController.m */,
-				9FFCF1A6252D793200A8B984 /* BanMaAiViewController.h */,
-				9FFCF1A7252D793200A8B984 /* BanMaAiViewController.m */,
+				9FE3B93A2574D5FB0057CA50 /* LiveRoom */,
+				9FE3B93E2574D6450057CA50 /* DouYin */,
+				9FE3B9442574D71A0057CA50 /* advertising */,
+				9FE3B9412574D6A00057CA50 /* Barrage */,
+				9FE3B9452574D72D0057CA50 /* BanMaAI */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -279,19 +293,7 @@
 		9FA088E12447067500FAE236 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				9F8EE56424A4927D00A88649 /* douyin.json */,
-				9F8848EC2449871F0085ACAF /* data.json */,
-				9F9861882452E06400616229 /* ChatRoomGiftModel.h */,
-				9F9861892452E06500616229 /* ChatRoomGiftModel.m */,
-				9F976E0F244EBD61009C9C0E /* ChatRoomUserModel.h */,
-				9F976E10244EBD61009C9C0E /* ChatRoomUserModel.m */,
-				9FA088E22447068A00FAE236 /* ChatRoomMessageModel.h */,
-				9FA088E32447068A00FAE236 /* ChatRoomMessageModel.m */,
-				9F8848E824497E540085ACAF /* DouYinModel.h */,
-				9F8848E924497E540085ACAF /* DouYinModel.m */,
 				9F8848EB244980890085ACAF /* Macro.h */,
-				9F8DFD31248A172700804EA1 /* ZBBarrageQueue.h */,
-				9F8DFD32248A172700804EA1 /* ZBBarrageQueue.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -306,6 +308,144 @@
 				9FA088F02447192200FAE236 /* YYWeakProxy.m */,
 			);
 			path = Libraries;
+			sourceTree = "<group>";
+		};
+		9FA14C6E2578D42C000BC6E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9FF9162B2579C5ED00F2F367 /* S2U0W2D4_720_course_c4b0c16f3746ee2fb29eeae486cf36ad.mp4 */,
+				9FA14C702578D45A000BC6E3 /* ZBGameQueue.h */,
+				9FA14C712578D45A000BC6E3 /* ZBGameQueue.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9FA14C6F2578D434000BC6E3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9FFCF1A6252D793200A8B984 /* BanMaAiViewController.h */,
+				9FFCF1A7252D793200A8B984 /* BanMaAiViewController.m */,
+				9FE3B9482574DD7A0057CA50 /* GameViewController.h */,
+				9FE3B9492574DD7A0057CA50 /* GameViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9FE3B93A2574D5FB0057CA50 /* LiveRoom */ = {
+			isa = PBXGroup;
+			children = (
+				9FE3B93D2574D6240057CA50 /* View */,
+				9FE3B93C2574D60F0057CA50 /* Controller */,
+				9FE3B93B2574D6020057CA50 /* Model */,
+			);
+			path = LiveRoom;
+			sourceTree = "<group>";
+		};
+		9FE3B93B2574D6020057CA50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9F8848EC2449871F0085ACAF /* data.json */,
+				9F9861882452E06400616229 /* ChatRoomGiftModel.h */,
+				9F9861892452E06500616229 /* ChatRoomGiftModel.m */,
+				9F976E0F244EBD61009C9C0E /* ChatRoomUserModel.h */,
+				9F976E10244EBD61009C9C0E /* ChatRoomUserModel.m */,
+				9FA088E22447068A00FAE236 /* ChatRoomMessageModel.h */,
+				9FA088E32447068A00FAE236 /* ChatRoomMessageModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9FE3B93C2574D60F0057CA50 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9FA088CE2446E05500FAE236 /* LiveRoomViewController.h */,
+				9FA088CF2446E05500FAE236 /* LiveRoomViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9FE3B93D2574D6240057CA50 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9F976DF9244E9656009C9C0E /* ChatRoomView */,
+				9F976DF8244E95EE009C9C0E /* ChatRoomCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9FE3B93E2574D6450057CA50 /* DouYin */ = {
+			isa = PBXGroup;
+			children = (
+				9F8EE56624A5AA4000A88649 /* DouYinView */,
+				9FE3B9402574D6630057CA50 /* Controller */,
+				9FE3B93F2574D64A0057CA50 /* Model */,
+			);
+			path = DouYin;
+			sourceTree = "<group>";
+		};
+		9FE3B93F2574D64A0057CA50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9F8EE56424A4927D00A88649 /* douyin.json */,
+				9F8848E824497E540085ACAF /* DouYinModel.h */,
+				9F8848E924497E540085ACAF /* DouYinModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9FE3B9402574D6630057CA50 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9F8848E524497C300085ACAF /* DouYinViewController.h */,
+				9F8848E624497C300085ACAF /* DouYinViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9FE3B9412574D6A00057CA50 /* Barrage */ = {
+			isa = PBXGroup;
+			children = (
+				9FE3B9462574D75F0057CA50 /* Model */,
+				9FE3B9422574D6AD0057CA50 /* Controller */,
+			);
+			path = Barrage;
+			sourceTree = "<group>";
+		};
+		9FE3B9422574D6AD0057CA50 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9F8DFD2E2489F9CE00804EA1 /* BarrageViewController.h */,
+				9F8DFD2F2489F9CE00804EA1 /* BarrageViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9FE3B9442574D71A0057CA50 /* advertising */ = {
+			isa = PBXGroup;
+			children = (
+				9F9592C6244C6FFA0004B439 /* AdViewController.h */,
+				9F9592C7244C6FFA0004B439 /* AdViewController.m */,
+			);
+			path = advertising;
+			sourceTree = "<group>";
+		};
+		9FE3B9452574D72D0057CA50 /* BanMaAI */ = {
+			isa = PBXGroup;
+			children = (
+				9FA14C6E2578D42C000BC6E3 /* Model */,
+				9FA14C6F2578D434000BC6E3 /* Controller */,
+				9F9CC2602575FA8700BAABBD /* View */,
+			);
+			path = BanMaAI;
+			sourceTree = "<group>";
+		};
+		9FE3B9462574D75F0057CA50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9F8DFD31248A172700804EA1 /* ZBBarrageQueue.h */,
+				9F8DFD32248A172700804EA1 /* ZBBarrageQueue.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		D72EC7FE55A1B0AA9D8793AB /* Pods */ = {
@@ -388,6 +528,7 @@
 				9F8F5EFC2445578F00A27071 /* Assets.xcassets in Resources */,
 				9F8F5EFA2445578B00A27071 /* Main.storyboard in Resources */,
 				9F8848ED2449871F0085ACAF /* data.json in Resources */,
+				9FF9162C2579C5ED00F2F367 /* S2U0W2D4_720_course_c4b0c16f3746ee2fb29eeae486cf36ad.mp4 in Resources */,
 				9F8EE56524A4927D00A88649 /* douyin.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,18 +583,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F9592C8244C6FFA0004B439 /* AdViewController.m in Sources */,
+				9F9CC2632575FABD00BAABBD /* GameSubView.m in Sources */,
 				9FA088F724471E8E00FAE236 /* YYFPSLabel.m in Sources */,
+				9FA14C722578D45A000BC6E3 /* ZBGameQueue.m in Sources */,
 				9F8848EA24497E540085ACAF /* DouYinModel.m in Sources */,
 				9FA088D52446E41300FAE236 /* ChatInputBoardView.m in Sources */,
 				9F8DFD302489F9CE00804EA1 /* BarrageViewController.m in Sources */,
 				9F8F5EF72445578B00A27071 /* ViewController.m in Sources */,
 				9F976E0C244EB71F009C9C0E /* NDGiftAnimationView.m in Sources */,
 				9FA088D02446E05500FAE236 /* LiveRoomViewController.m in Sources */,
+				9FE3B94A2574DD7A0057CA50 /* GameViewController.m in Sources */,
 				9F976E0E244EB71F009C9C0E /* NDGiftAnimationImgView.m in Sources */,
 				9F98618A2452E06500616229 /* ChatRoomGiftModel.m in Sources */,
 				9F976E0B244EB71F009C9C0E /* NDGiftAnimation.m in Sources */,
 				9FA088E42447068A00FAE236 /* ChatRoomMessageModel.m in Sources */,
 				9F8F5EF12445578B00A27071 /* AppDelegate.m in Sources */,
+				9F9CC2552575DC2900BAABBD /* UIViewController+ZBKit.m in Sources */,
+				9F8F3BAF25764CB8002604E2 /* ScoreView.m in Sources */,
 				9FFCF1A8252D793200A8B984 /* BanMaAiViewController.m in Sources */,
 				9F8F5F022445578F00A27071 /* main.m in Sources */,
 				9FA088DB2446E82F00FAE236 /* UITextView+ZBPlaceHolder.m in Sources */,
