@@ -1,1 +1,0 @@
-../../../SuperPlayer/Demo/TXLiteAVDemo/SuperPlayerKit/SuperPlayer/Skins/SPDefaultControlView.h

@@ -1,35 +1,6 @@
 PODS:
-  - AFNetworking (4.0.1):
-    - AFNetworking/NSURLSession (= 4.0.1)
-    - AFNetworking/Reachability (= 4.0.1)
-    - AFNetworking/Security (= 4.0.1)
-    - AFNetworking/Serialization (= 4.0.1)
-    - AFNetworking/UIKit (= 4.0.1)
-  - AFNetworking/NSURLSession (4.0.1):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (4.0.1)
-  - AFNetworking/Security (4.0.1)
-  - AFNetworking/Serialization (4.0.1)
-  - AFNetworking/UIKit (4.0.1):
-    - AFNetworking/NSURLSession
   - Masonry (1.1.0)
   - OCBarrage (1.0.5)
-  - SDWebImage (5.9.3):
-    - SDWebImage/Core (= 5.9.3)
-  - SDWebImage/Core (5.9.3)
-  - SuperPlayer (3.3.1):
-    - AFNetworking
-    - Masonry
-    - SDWebImage
-    - SuperPlayer/Player (= 3.3.1)
-  - SuperPlayer/Player (3.3.1):
-    - AFNetworking
-    - Masonry
-    - SDWebImage
-    - TXLiteAVSDK_Player (= 7.8.9518)
-  - TXLiteAVSDK_Player (7.8.9518)
   - YYModel (1.0.4)
   - YYText (1.0.7)
   - ZFPlayer (4.0.1):
@@ -43,7 +14,6 @@ PODS:
 DEPENDENCIES:
   - Masonry
   - OCBarrage
-  - SuperPlayer
   - YYModel
   - YYText
   - ZFPlayer
@@ -52,27 +22,19 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - AFNetworking
     - Masonry
     - OCBarrage
-    - SDWebImage
-    - SuperPlayer
-    - TXLiteAVSDK_Player
     - YYModel
     - YYText
     - ZFPlayer
 
 SPEC CHECKSUMS:
-  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   OCBarrage: 5ee1a922afacb2c04739621ccda71872185e2e59
-  SDWebImage: a31ee8e90a97303529e03fb0c333eae0eacb88e9
-  SuperPlayer: e2546119ded40d324dadb4405d1a5e634855bc11
-  TXLiteAVSDK_Player: e0d60dacec8ef210de78641b9125121be3aad1e2
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
   ZFPlayer: f88787c815f7b0801279c42f131a89e2823e669e
 
-PODFILE CHECKSUM: 191aba78a29a4ea9de1f333af2f5b96c55dccdaa
+PODFILE CHECKSUM: 00e73e6a8fc8cf5b92f05dffa1ed71f48f40fb91
 
 COCOAPODS: 1.9.1

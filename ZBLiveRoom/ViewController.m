@@ -12,7 +12,7 @@
 #import "DouYinViewController.h"
 #import "AdViewController.h"
 #import "Macro.h"
-#import <SuperPlayer/SuperPlayer.h>
+#import <SuperPlayer/SuperPlayer.h>//报错 需要 pod install
 #import "BarrageViewController.h"
 #import "ZBBarrageQueue.h"
 #import "BanMaAiViewController.h"
