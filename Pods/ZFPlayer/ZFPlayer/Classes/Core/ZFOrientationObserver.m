@@ -314,20 +314,6 @@
     return self.supportInterfaceOrientation & ZFInterfaceOrientationMaskLandscapeRight;
 }
 
-- (void)_fixNavigationBarLayout {
-    UINavigationController *nav = [self _lookupResponderForClass:UINavigationController.class];
-    [nav viewDidAppear:NO];
-    [nav.navigationBar layoutSubviews];
-}
-
-- (__kindof UIResponder *_Nullable)_lookupResponderForClass:(Class)cls {
-    __kindof UIResponder *_Nullable next = self.containerView.nextResponder;
-    while ( next != nil && [next isKindOfClass:cls] == NO ) {
-        next = next.nextResponder;
-    }
-    return next;
-}
-
 - (BOOL)_isSupported:(UIInterfaceOrientation)orientation {
     switch (orientation) {
         case UIInterfaceOrientationPortrait:
@@ -353,6 +339,36 @@
             [self.window makeKeyAndVisible];
         }
     }
+}
+
+- (void)_rotationToPortraitOrientation:(UIInterfaceOrientation)orientation {
+    if (orientation == UIInterfaceOrientationPortrait && !self.window.hidden) {
+        UIView *containerView = nil;
+        if (self.rotateType == ZFRotateTypeCell) {
+            containerView = [self.cell viewWithTag:self.playerViewTag];
+        } else {
+            containerView = self.containerView;
+        }
+        UIView *snapshot = [self.view snapshotViewAfterScreenUpdates:NO];
+        snapshot.frame = containerView.bounds;
+        [containerView addSubview:snapshot];
+        [self performSelector:@selector(_contentViewAdd:) onThread:NSThread.mainThread withObject:containerView waitUntilDone:NO modes:@[NSDefaultRunLoopMode]];
+        [self performSelector:@selector(_makeKeyAndVisible:) onThread:NSThread.mainThread withObject:snapshot waitUntilDone:NO modes:@[NSDefaultRunLoopMode]];
+    }
+}
+
+- (void)_contentViewAdd:(UIView *)containerView {
+    [containerView addSubview:self.view];
+    self.view.frame = containerView.bounds;
+    [self.view layoutIfNeeded];
+}
+
+- (void)_makeKeyAndVisible:(UIView *)snapshot {
+    [snapshot removeFromSuperview];
+    UIWindow *previousKeyWindow = self.previousKeyWindow ?: UIApplication.sharedApplication.windows.firstObject;
+    [previousKeyWindow makeKeyAndVisible];
+    self.previousKeyWindow = nil;
+    self.window.hidden = YES;
 }
 
 #pragma mark - ZFLandscapeViewControllerDelegate
@@ -381,9 +397,6 @@
 }
 
 - (void)ls_willRotateToOrientation:(UIInterfaceOrientation)orientation {
-    if (UIInterfaceOrientationIsPortrait(orientation)) {
-        [self performSelector:@selector(_fixNavigationBarLayout) onThread:NSThread.mainThread withObject:@(NO) waitUntilDone:NO];
-    }
     self.fullScreen = UIInterfaceOrientationIsLandscape(orientation);
     if (self.orientationWillChange) self.orientationWillChange(self, self.isFullScreen);
 }
@@ -391,18 +404,7 @@
 - (void)ls_didRotateFromOrientation:(UIInterfaceOrientation)orientation {
     if (self.orientationDidChanged) self.orientationDidChanged(self, self.isFullScreen);
     if (!self.isFullScreen) {
-        UIView *containerView = nil;
-        if (self.rotateType == ZFRotateTypeCell) {
-            containerView = [self.cell viewWithTag:self.playerViewTag];
-        } else {
-            containerView = self.containerView;
-        }
-        [containerView addSubview:self.view];
-        self.view.frame = containerView.bounds;
-        UIWindow *previousKeyWindow = self.previousKeyWindow ?: UIApplication.sharedApplication.windows.firstObject;
-        [previousKeyWindow makeKeyAndVisible];
-        self.previousKeyWindow = nil;
-        self.window.hidden = YES;
+        [self _rotationToPortraitOrientation:UIInterfaceOrientationPortrait];
     }
 }
 

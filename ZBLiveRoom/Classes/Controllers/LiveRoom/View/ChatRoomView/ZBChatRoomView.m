@@ -108,6 +108,9 @@
 
    [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationNone];
     [self.tempMsgArray removeAllObjects];
+    /**
+    iphone 6s  测试大于1400条 会卡，可以根据具体情况适当调整下面的数值
+     */
     if (self.dataArray.count>500) {//如果大于500 删除前200条 保持流畅度
         [self.dataArray removeObjectsInRange:NSMakeRange(1,200)];
         [self.tableView reloadData];

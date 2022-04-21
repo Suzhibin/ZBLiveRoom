@@ -48,6 +48,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, readonly) BOOL isFullscreen;
 
+@property (nonatomic, getter=isRotating) BOOL rotating;
+
 @property (nonatomic, assign) BOOL disableAnimations;
 
 @property (nonatomic, assign) BOOL statusBarHidden;

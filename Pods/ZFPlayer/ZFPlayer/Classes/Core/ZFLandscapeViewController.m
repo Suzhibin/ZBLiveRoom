@@ -27,7 +27,6 @@
 @interface ZFLandscapeViewController ()
 
 @property (nonatomic, assign) UIInterfaceOrientation currentOrientation;
-@property (nonatomic, getter=isRotating) BOOL rotating;
 
 @end
 
@@ -65,8 +64,10 @@
     
     [self.delegate ls_willRotateToOrientation:self.currentOrientation];
     BOOL isFullscreen = size.width > size.height;
-    [CATransaction begin];
-    [CATransaction setDisableActions:self.disableAnimations];
+    if (self.disableAnimations) {
+        [CATransaction begin];
+        [CATransaction setDisableActions:YES];
+    }
     [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> _Nonnull context) {
         if (isFullscreen) {
             self.contentView.frame = CGRectMake(0, 0, size.width, size.height);
@@ -75,9 +76,15 @@
         }
         [self.contentView layoutIfNeeded];
     } completion:^(id<UIViewControllerTransitionCoordinatorContext> _Nonnull context) {
-        [CATransaction commit];
-        self.disableAnimations = NO;
+        if (self.disableAnimations) {
+            [CATransaction commit];
+        }
         [self.delegate ls_didRotateFromOrientation:self.currentOrientation];
+        if (!isFullscreen) {
+            self.contentView.frame = self.containerView.bounds;
+            [self.contentView layoutIfNeeded];
+        }
+        self.disableAnimations = NO;
         self.rotating = NO;
     }];
 }
@@ -100,6 +107,14 @@
         return UIInterfaceOrientationMaskLandscape;
     }
     return UIInterfaceOrientationMaskAll;
+}
+
+- (BOOL)prefersHomeIndicatorAutoHidden {
+    UIInterfaceOrientation currentOrientation = (UIInterfaceOrientation)[UIDevice currentDevice].orientation;
+    if (UIInterfaceOrientationIsLandscape(currentOrientation)) {
+        return YES;
+    }
+    return NO;
 }
 
 - (BOOL)prefersStatusBarHidden {

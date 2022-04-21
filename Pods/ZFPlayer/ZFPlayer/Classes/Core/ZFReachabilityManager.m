@@ -100,7 +100,9 @@ static void ZFPostReachabilityStatusChange(SCNetworkReachabilityFlags flags, ZFR
     dispatch_async(dispatch_get_main_queue(), ^{
         if (block) block(status);
         NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
-        NSDictionary *userInfo = @{ ZFReachabilityNotificationStatusItem: @(status) };
+        NSMutableDictionary *userInfo = @{}.mutableCopy;
+        userInfo[ZFReachabilityNotificationStatusItem] = @(status);
+        
         [notificationCenter postNotificationName:ZFReachabilityDidChangeNotification object:nil userInfo:userInfo];
     });
 }

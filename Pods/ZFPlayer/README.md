@@ -32,33 +32,26 @@ Before this, you used ZFPlayer, are you worried about encapsulating avplayer ins
 ZFPlayer is available through [CocoaPods](https://cocoapods.org). To install it,use player template simply add the following line to your Podfile:
 
 ```objc
-pod 'ZFPlayer', '~> 3.0'
+pod 'ZFPlayer', '~> 4.0'
 ```
 
 Use default controlView simply add the following line to your Podfile:
 
 ```objc
-pod 'ZFPlayer/ControlView', '~> 3.0'
+pod 'ZFPlayer/ControlView', '~> 4.0'
 ```
 Use AVPlayer simply add the following line to your Podfile:
 
 ```objc
-pod 'ZFPlayer/AVPlayer', '~> 3.0'
+pod 'ZFPlayer/AVPlayer', '~> 4.0'
 ```
 
 Use ijkplayer simply add the following line to your Podfile:
 
 ```objc
-pod 'ZFPlayer/ijkplayer', '~> 3.0'
+pod 'ZFPlayer/ijkplayer', '~> 4.0'
 ```
 [IJKMediaFramework SDK](https://gitee.com/renzifeng/IJKMediaFramework) support cocoapods
-
-Use KSYMediaPlayer simply add the following line to your Podfile:
-
-```objc
-pod 'ZFPlayer/KSYMediaPlayer', '~> 3.0'
-```
-[KSYMediaPlayer SDK](https://github.com/ksvc/KSYMediaPlayer_iOS) support cocoapods
 
 
 边下边播可以参考使用[KTVHTTPCache](https://github.com/ChangbaDevs/KTVHTTPCache)
