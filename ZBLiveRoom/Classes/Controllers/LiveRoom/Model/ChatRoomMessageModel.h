@@ -35,7 +35,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSMutableAttributedString *msgAttribText;
 /// 消息高度
 @property (nonatomic, assign) CGFloat msgHeight;
-
+/// 消息宽度
+@property (nonatomic, assign) CGFloat msgWidth;
 -(instancetype)initWithDict:(NSDictionary *)dict;
 - (void)initMsgAttribute;
 @end

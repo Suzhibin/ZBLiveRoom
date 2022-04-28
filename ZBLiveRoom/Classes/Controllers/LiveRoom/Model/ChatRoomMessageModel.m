@@ -89,7 +89,7 @@
 
     NSStringDrawingOptions options =  NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading;
     // 获取label的最大宽度
-    CGRect rect = [attrStr boundingRectWithSize:CGSizeMake(k_SCREEN_WIDTH-20, CGFLOAT_MAX)options:options context:nil];
+    CGRect rect = [attrStr boundingRectWithSize:CGSizeMake(k_SCREEN_WIDTH-20-self.msgWidth, CGFLOAT_MAX)options:options context:nil];
     self.msgHeight= ceilf(rect.size.height);
 }
 

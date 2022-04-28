@@ -21,6 +21,7 @@
 #import "NDGiftAnimation.h"
 #import <YYModel/YYModel.h>
 #import "ChatRoomGiftModel.h"
+#import "UIView+ZBExtension.h"
 @interface LiveRoomViewController ()<ChatInputBoardViewDelegate,SuperPlayerDelegate>
 @property (nonatomic,strong) ChatInputBoardView *inputView;//聊天框
 @property (nonatomic) UIView *playerFatherView;//播放器父view
@@ -32,6 +33,7 @@
 @property (nonatomic, strong)OCBarrageManager *barrageManager;
 @property (nonatomic, strong) NDGiftAnimation *giftAnimation;
 @property (nonatomic, assign) NSInteger isBarrage;
+@property (nonatomic, assign) NSInteger roomViewRight;
 @end
 
 @implementation LiveRoomViewController
@@ -63,11 +65,12 @@
     [self startPlay];
     [self createAddDataBtn];
     [self createBarrageBtn];
-    
+    self.roomViewRight=80;//设置 聊天室右边距 及 点赞宽度
     [self.view addSubview:self.chatRoomView];
     [self.chatRoomView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(_playerFatherView.mas_bottom).offset(10);
-        make.left.right.equalTo(@(0));
+        make.left.equalTo(@(0));
+        make.right.equalTo(self.view.mas_right).offset(-self.roomViewRight);
         make.bottom.equalTo(self.view.mas_bottom).offset(-(ChatKeyBoardInputViewH+safeAreaBottomHeight));
     }];
     
@@ -86,6 +89,7 @@
    NSDictionary *dict= _conmentAry[arc4random() % _conmentAry.count];
     ChatRoomMessageModel *msgModel = [ChatRoomMessageModel yy_modelWithDictionary:dict];
     msgModel.user.name= _nameAry[arc4random() % _nameAry.count];
+    msgModel.msgWidth=self.roomViewRight;
     [msgModel initMsgAttribute];
     return  msgModel;
 }
@@ -283,17 +287,15 @@
         [self sendbarrage:str ismember:NO];
     }
     if (msgModel.mesType==4) {
-        if (msgModel.user.name==_nameAry[arc4random() % _nameAry.count]) {
-            NDGiftModel *showGift = [NDGiftModel new];
-            showGift.userId = msgModel.user.userId;
-            showGift.userName=msgModel.user.name;
-            showGift.duration=[NSNumber numberWithInteger:10000];
-            showGift.giftId=msgModel.gift.giftId;
-            showGift.giftName=msgModel.gift.giftName;
-            showGift.giftImageName=msgModel.gift.giftImageName;
-            showGift.giftCount =1;
-            [_giftAnimation receivedGift:showGift];
-        }
+        NDGiftModel *showGift = [NDGiftModel new];
+        showGift.userId = msgModel.user.userId;
+        showGift.userName=msgModel.user.name;
+        showGift.duration=[NSNumber numberWithInteger:10000];
+        showGift.giftId=msgModel.gift.giftId;
+        showGift.giftName=msgModel.gift.giftName;
+        showGift.giftImageName=msgModel.gift.giftImageName;
+        showGift.giftCount =1;
+        [_giftAnimation receivedGift:showGift];
     }else{
         [self.chatRoomView sendChatRoomMessage:msgModel];
     }
@@ -336,6 +338,116 @@
         _barrageManager.renderView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     }
     return _barrageManager;
+}
+#pragma mark - 双击点赞
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+
+    UITouch *touch = [touches anyObject];
+    if (touch.tapCount <= 1.0f) return;
+    
+    CGPoint point = [touch locationInView:touch.view];
+    UIImage *image = [UIImage imageNamed:@"gift_icon_3"];
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
+    imgView.image = image;
+    imgView.contentMode = UIViewContentModeScaleAspectFill;
+    imgView.center = point;
+    
+    // 随机左右显示
+    int leftOrRight = arc4random() % 2;
+    leftOrRight = leftOrRight ? leftOrRight : -1;
+    imgView.transform = CGAffineTransformRotate(imgView.transform, M_PI / 9.0f * leftOrRight);
+    [touch.view addSubview:imgView];
+    
+    // 出现的时候回弹一下
+    __block UIImageView *blockImgV = imgView;
+    __block UIImage *blockImage = image;
+    
+    [UIView animateWithDuration:0.1 animations:^{
+        blockImgV.transform = CGAffineTransformScale(blockImgV.transform, 1.2f, 1.2f);
+    } completion:^(BOOL finished) {
+        blockImgV.transform = CGAffineTransformScale(blockImgV.transform, 0.8f, 0.8f);
+     
+        // 向上飘，放大，透明
+        [self performSelector:@selector(animationToTop:) withObject:@[blockImgV, blockImage] afterDelay:0.3f];
+    }];
+    
+    [self praiseAnimation];
+}
+- (void)animationToTop:(NSArray *)imgObjects {
+    if (imgObjects && imgObjects.count > 0) {
+        __block UIImageView *imgView = (UIImageView *)imgObjects.firstObject;
+        __block UIImage *image = (UIImage *)imgObjects.lastObject;
+        [UIView animateWithDuration:1.0f animations:^{
+            CGRect imgViewFrame = imgView.frame;
+            imgViewFrame.origin.y -= 100.0f;
+            imgView.frame = imgViewFrame;
+            imgView.transform = CGAffineTransformScale(imgView.transform, 1.8f, 1.8f);
+            imgView.alpha = 0.0f;
+        } completion:^(BOOL finished) {
+            [imgView removeFromSuperview];
+            imgView = nil;
+            image = nil;
+        }];
+    }
+}
+
+- (void)praiseAnimation {
+    UIImageView *imageView = [[UIImageView alloc] init];
+    CGRect frame = self.view.frame;
+    //  初始frame，即设置了动画的起点
+    imageView.frame = CGRectMake(frame.size.width - 40, frame.size.height - 65, 30, 30);
+    //  初始化imageView透明度为0
+    imageView.alpha = 0;
+    imageView.backgroundColor = [UIColor clearColor];
+    imageView.clipsToBounds = YES;
+    //  用0.2秒的时间将imageView的透明度变成1.0，同时将其放大1.3倍，再缩放至1.1倍，这里参数根据需求设置
+    [UIView animateWithDuration:0.2 animations:^{
+        imageView.alpha = 1.0;
+        imageView.frame = CGRectMake(frame.size.width - 40, frame.size.height - 90, 30, 30);
+        CGAffineTransform transfrom = CGAffineTransformMakeScale(1.3, 1.3);
+        imageView.transform = CGAffineTransformScale(transfrom, 1, 1);
+    }];
+    [self.view addSubview:imageView];
+    //  随机产生一个动画结束点的X值
+    CGFloat finishX = frame.size.width-30 - round(random() % self.roomViewRight);
+    //  动画结束点的Y值
+    CGFloat finishY = self.chatRoomView.top;
+    //  imageView在运动过程中的缩放比例
+    CGFloat scale = round(random() % 2) + 0.7;
+    // 生成一个作为速度参数的随机数
+    CGFloat speed = 1 / round(random() % 900) + 0.6;
+    //  动画执行时间
+    NSTimeInterval duration = 4 * speed;
+    //  如果得到的时间是无穷大，就重新附一个值（这里要特别注意，请看下面的特别提醒）
+    if (duration == INFINITY) duration = 2.412346;
+ 
+    //  开始动画
+    [UIView beginAnimations:nil context:(__bridge void *_Nullable)(imageView)];
+    //  设置动画时间
+    [UIView setAnimationDuration:duration];
+    
+    //  拼接图片名字
+    imageView.image = [UIImage imageNamed:@"ss_icon_star_selected"];
+    
+    //  设置imageView的结束frame
+    imageView.frame = CGRectMake( finishX, finishY, 30 * scale, 30 * scale);
+    
+    //  设置渐渐消失的效果，这里的时间最好和动画时间一致
+    [UIView animateWithDuration:duration animations:^{
+        imageView.alpha = 0;
+    }];
+    
+    //  结束动画，调用onAnimationComplete:finished:context:函数
+    [UIView setAnimationDidStopSelector:@selector(onAnimationComplete:finished:context:)];
+    //  设置动画代理
+    [UIView setAnimationDelegate:self];
+    [UIView commitAnimations];
+}
+/// 动画完后销毁iamgeView
+- (void)onAnimationComplete:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context{
+    UIImageView *imageView = (__bridge UIImageView *)(context);
+    [imageView removeFromSuperview];
+    imageView = nil;
 }
 /*
 #pragma mark - Navigation
