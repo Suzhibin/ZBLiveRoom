@@ -65,7 +65,7 @@
     [self startPlay];
     [self createAddDataBtn];
     [self createBarrageBtn];
-    self.roomViewRight=80;//设置 聊天室右边距 及 点赞宽度
+    self.roomViewRight=60;//设置 聊天室右边距 及 点赞宽度
     [self.view addSubview:self.chatRoomView];
     [self.chatRoomView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(_playerFatherView.mas_bottom).offset(10);
@@ -298,6 +298,8 @@
         [_giftAnimation receivedGift:showGift];
     }else{
         [self.chatRoomView sendChatRoomMessage:msgModel];
+        [self praiseAnimation];//点赞
+      
     }
 }
 #pragma mark - 配置弹幕
@@ -344,7 +346,6 @@
 
     UITouch *touch = [touches anyObject];
     if (touch.tapCount <= 1.0f) return;
-    
     CGPoint point = [touch locationInView:touch.view];
     UIImage *image = [UIImage imageNamed:@"gift_icon_3"];
     UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
@@ -411,7 +412,7 @@
     //  随机产生一个动画结束点的X值
     CGFloat finishX = frame.size.width-30 - round(random() % self.roomViewRight);
     //  动画结束点的Y值
-    CGFloat finishY = self.chatRoomView.top;
+    CGFloat finishY = self.chatRoomView.top+100;
     //  imageView在运动过程中的缩放比例
     CGFloat scale = round(random() % 2) + 0.7;
     // 生成一个作为速度参数的随机数
@@ -446,17 +447,9 @@
 /// 动画完后销毁iamgeView
 - (void)onAnimationComplete:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context{
     UIImageView *imageView = (__bridge UIImageView *)(context);
+    NSLog(@"context:%@",imageView);
     [imageView removeFromSuperview];
     imageView = nil;
 }
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

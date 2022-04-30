@@ -28,7 +28,7 @@
         [self.window setRootViewController:nav];
         [self.window makeKeyAndVisible];
     
-     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(palyVCcisFullScreen:) name:@"palyisFullScreen" object:nil];//星探视频详情旋转
+     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(palyVCcisFullScreen:) name:@"palyisFullScreen" object:nil];
 //        YYFPSLabel *fps = [[YYFPSLabel alloc]init];//fps监测
 //        [self.window addSubview:fps];
 //    [fps mas_makeConstraints:^(MASConstraintMaker *make) {

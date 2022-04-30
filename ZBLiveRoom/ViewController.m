@@ -33,6 +33,14 @@
     
 
     [self.view addSubview:self.tableView];
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        if (@available(iOS 11.0, *)) {
+            make.top.equalTo(self.view.mas_safeAreaLayoutGuideTop);
+        } else {
+            make.top.mas_equalTo(20+self.navigationController.navigationBar.bounds.size.height);
+        }
+        make.left.right.bottom.equalTo(@(0));
+    }];
     self.dataArray=[NSMutableArray arrayWithObjects:@"直播间",@"抖音",@"广告+正片",@"播放视频（弹幕绑定视频播放时间）",@"斑马AI课",nil];
     [self.tableView reloadData];
 }
@@ -80,8 +88,7 @@
 }
 - (UITableView *)tableView{
     if (!_tableView) {
-
-        _tableView=[[UITableView alloc]initWithFrame:CGRectMake(0, k_safeAreaTopHeight+k_NAVBAR_HEIGHT, k_SCREEN_WIDTH, k_SCREEN_HEIGHT) style:UITableViewStylePlain];
+        _tableView=[[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
         _tableView.backgroundColor=[UIColor colorWithRed:(240)/255.0 green:(242)/255.0 blue:(245)/255.0 alpha:(1)];
         _tableView.delegate=self;
         _tableView.dataSource=self;
