@@ -80,9 +80,9 @@
         [self.navigationController pushViewController:bVC animated:YES];
     }else if(indexPath.row==4){
         BanMaAiViewController*aiVC=[[BanMaAiViewController alloc]init];
-//        UINavigationController *pushNav = [[UINavigationController alloc] initWithRootViewController:aiVC];
-//        pushNav.modalPresentationStyle = UIModalPresentationFullScreen;
-        [self presentViewController:aiVC animated:YES completion:nil];
+        UINavigationController *pushNav = [[UINavigationController alloc] initWithRootViewController:aiVC];
+        pushNav.modalPresentationStyle = UIModalPresentationFullScreen;
+        [self presentViewController:pushNav animated:YES completion:nil];
     }
  
 }

@@ -28,6 +28,10 @@
 
 - (void)dealloc{
     NSLog(@"释放%s",__func__);
+}
+- (void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"palyisFullScreen" object:self userInfo:@{@"isFullScreen":@(NO)}];
 }
 - (void)viewWillAppear:(BOOL)animated{

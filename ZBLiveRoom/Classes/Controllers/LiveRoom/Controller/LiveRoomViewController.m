@@ -200,11 +200,7 @@
     self.playerFatherView.backgroundColor = [UIColor blackColor];
     [self.view addSubview:self.playerFatherView];
     [self.playerFatherView mas_makeConstraints:^(MASConstraintMaker *make) {
-        if (@available(iOS 11.0, *)) {
-            make.top.equalTo(self.view.mas_safeAreaLayoutGuideTop);
-        } else {
-            make.top.mas_equalTo(20+self.navigationController.navigationBar.bounds.size.height);
-        }
+        make.top.equalTo(@(0));
         make.leading.trailing.mas_equalTo(0);
         make.height.mas_equalTo(self.playerFatherView.mas_width).multipliedBy(9.0f/16.0f);// 这里宽高比16：9,可自定义宽高比
     }];

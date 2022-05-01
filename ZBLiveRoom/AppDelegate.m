@@ -22,7 +22,20 @@
 
         self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
         [self.window setBackgroundColor:[UIColor whiteColor]];
-           
+    if (@available(iOS 15.0, *)) {
+         UINavigationBarAppearance *appearance = [[UINavigationBarAppearance alloc] init];
+         [appearance setBackgroundColor:[UIColor whiteColor]];
+        NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+        UIColor *color = [UIColor blackColor];
+        UIFont *font = [UIFont fontWithName:@"PingFangSC-Medium" size:17.0f];
+        [dict setObject:color forKey:NSForegroundColorAttributeName];
+        [dict setObject:font forKey:NSFontAttributeName];
+         appearance.titleTextAttributes = dict;
+
+         [[UINavigationBar appearance] setScrollEdgeAppearance: appearance];
+         [[UINavigationBar appearance] setStandardAppearance:appearance];
+     }
+        [[UINavigationBar appearance] setTranslucent:NO];
         ViewController *vc = [[ViewController alloc] init];
         UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
         [self.window setRootViewController:nav];
