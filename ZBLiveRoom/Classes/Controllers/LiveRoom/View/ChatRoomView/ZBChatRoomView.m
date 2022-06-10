@@ -15,7 +15,6 @@
 @property (nonatomic,strong)NSMutableArray<ChatRoomMessageModel *> *dataArray;//正式数据
 @property (nonatomic,strong)NSMutableArray<ChatRoomMessageModel *> *tempMsgArray;//临时数据
 @property (nonatomic,strong)UIButton * moreButton;//新消息按钮
-@property (nonatomic,assign)NSInteger page;
 @property (nonatomic) dispatch_source_t timer;
 @end
 @implementation ZBChatRoomView
@@ -45,7 +44,6 @@
             make.width.equalTo(@(80));
             make.height.equalTo(@(25));
         }];
-        _page=0;
     }
     return self;
 }
@@ -130,12 +128,10 @@
 }
 - (void)updateMoreBtnHidden {
     if (self.inPending && self.tempMsgArray.count > 0) {
-        _page++;
-        NSString *str=[NSString stringWithFormat:@"%ld 条新消息",_page];
+        NSString *str=[NSString stringWithFormat:@"%ld 条新消息",self.tempMsgArray.count];
         [_moreButton setTitle:str forState:UIControlStateNormal];
         self.moreButton.hidden = NO;
     } else {
-        _page=0;
         self.moreButton.hidden = YES;
     }
 }
