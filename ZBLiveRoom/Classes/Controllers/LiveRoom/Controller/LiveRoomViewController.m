@@ -221,7 +221,7 @@
     _inputView.delegate = self;
     [_inputView.sendBtn setTitle:@"礼物" forState:UIControlStateNormal];
     [_inputView.sendBtn addTarget:self action:@selector(sendBtn_Action:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:_inputView];
+    [ [[UIApplication sharedApplication].delegate window] addSubview:_inputView];
 }
 
 #pragma mark - 创建添加数据按钮
