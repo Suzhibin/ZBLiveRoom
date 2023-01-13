@@ -25,7 +25,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor=[UIColor whiteColor];
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"palyisFullScreen" object:self userInfo:@{@"isFullScreen":@(YES)}];
     [self gameUI];
     [self createBtn];
     [self createScore];

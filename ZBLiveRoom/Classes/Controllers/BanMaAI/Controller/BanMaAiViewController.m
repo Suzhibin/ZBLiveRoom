@@ -32,7 +32,7 @@
 - (void)viewDidDisappear:(BOOL)animated{
     [super viewDidDisappear:animated];
     [self.navigationController setNavigationBarHidden:NO animated:NO];
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"palyisFullScreen" object:self userInfo:@{@"isFullScreen":@(NO)}];
+  
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -44,7 +44,7 @@
     self.view.backgroundColor=[UIColor whiteColor];
     self.timeArray=[[NSMutableArray alloc]init];
     [self createTimeData];//创造游戏节点数据
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"palyisFullScreen" object:self userInfo:@{@"isFullScreen":@(YES)}];
+
     [self createaPlayerView];
     [self startPlay];
     

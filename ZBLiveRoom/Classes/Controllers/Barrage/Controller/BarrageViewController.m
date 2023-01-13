@@ -73,7 +73,7 @@
     @weakify(self) /// 屏幕改变
     self.player.orientationWillChange = ^(ZFPlayerController * _Nonnull player, BOOL isFullScreen) {
         @strongify(self)
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"palyisFullScreen" object:self userInfo:@{@"isFullScreen":@(isFullScreen)}];
+    
         [self setNeedsStatusBarAppearanceUpdate];
     };
 

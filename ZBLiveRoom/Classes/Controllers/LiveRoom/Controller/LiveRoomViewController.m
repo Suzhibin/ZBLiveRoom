@@ -41,6 +41,8 @@
     NSLog(@"释放%s",__func__);
     [_playerView resetPlayer];//销毁播放器
     [self stopTimer];//销毁倒计时
+    [self.inputView removeFromSuperview];
+    self.inputView=nil;
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];

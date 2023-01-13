@@ -10,6 +10,7 @@
 #import "ViewController.h"
 #import "YYFPSLabel.h"
 #import <Masonry/Masonry.h>
+#import <ZFPlayer/ZFLandscapeRotationManager.h>
 @interface AppDelegate ()
 
 @end
@@ -41,7 +42,6 @@
         [self.window setRootViewController:nav];
         [self.window makeKeyAndVisible];
     
-     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(palyVCcisFullScreen:) name:@"palyisFullScreen" object:nil];
 //        YYFPSLabel *fps = [[YYFPSLabel alloc]init];//fps监测
 //        [self.window addSubview:fps];
 //    [fps mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -51,15 +51,15 @@
 //    }];
     return YES;
 }
-- (void)palyVCcisFullScreen:(NSNotification *)notify{
-    NSNumber *isFullScreen= notify.userInfo[@"isFullScreen"];
-    self.allowOrentitaionRotation=[isFullScreen boolValue];
-}
-/// 在这里写支持的旋转方向，为了防止横屏方向，应用启动时候界面变为横屏模式
+
+// 在这里写支持的旋转方向，为了防止横屏方向，应用启动时候界面变为横屏模式
 - (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
-    if (self.allowOrentitaionRotation) {
-        return UIInterfaceOrientationMaskAllButUpsideDown;
+    /// ZFPlayer自动根据window适配横竖屏
+    ZFInterfaceOrientationMask orientationMask = [ZFLandscapeRotationManager supportedInterfaceOrientationsForWindow:window];
+    if (orientationMask != ZFInterfaceOrientationMaskUnknow) {
+        return (UIInterfaceOrientationMask)orientationMask;
     }
+    /// 这里是非播放器VC支持的方向
     return UIInterfaceOrientationMaskPortrait;
 }
 /*
