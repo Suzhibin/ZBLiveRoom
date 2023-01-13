@@ -10,6 +10,38 @@
 		8377B10C46329DE7127C4491 /* libPods-ZBLiveRoom.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54AFFF6AB2379B9BC75D3155 /* libPods-ZBLiveRoom.a */; };
 		9F4DAA022449992500630680 /* DouYinTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4DAA012449992500630680 /* DouYinTableViewCell.m */; };
 		9F4DAA052449AD3F00630680 /* SPDouYinControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4DAA042449AD3F00630680 /* SPDouYinControlView.m */; };
+		9F5A02762971491F002DAF1A /* NSString+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A022D2971491F002DAF1A /* NSString+URL.m */; };
+		9F5A02772971491F002DAF1A /* UINavigationController+SuperPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A02302971491F002DAF1A /* UINavigationController+SuperPlayerRotation.m */; };
+		9F5A02782971491F002DAF1A /* UIView+MMLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A02322971491F002DAF1A /* UIView+MMLayout.m */; };
+		9F5A02792971491F002DAF1A /* UIViewController+SuperPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A02332971491F002DAF1A /* UIViewController+SuperPlayerRotation.m */; };
+		9F5A027A2971491F002DAF1A /* SuperPlayerWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A02362971491F002DAF1A /* SuperPlayerWindow.m */; };
+		9F5A027B2971491F002DAF1A /* SPWeiboControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A02382971491F002DAF1A /* SPWeiboControlView.m */; };
+		9F5A027C2971491F002DAF1A /* SPDefaultControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A02392971491F002DAF1A /* SPDefaultControlView.m */; };
+		9F5A027D2971491F002DAF1A /* UIView+Fade.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A02452971491F002DAF1A /* UIView+Fade.m */; };
+		9F5A027E2971491F002DAF1A /* StrUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A02462971491F002DAF1A /* StrUtils.m */; };
+		9F5A027F2971491F002DAF1A /* J2Obj.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A02472971491F002DAF1A /* J2Obj.m */; };
+		9F5A02802971491F002DAF1A /* TXBitrateItemHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A02482971491F002DAF1A /* TXBitrateItemHelper.m */; };
+		9F5A02812971491F002DAF1A /* TXCUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A02492971491F002DAF1A /* TXCUrl.m */; };
+		9F5A02822971491F002DAF1A /* DataReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A024A2971491F002DAF1A /* DataReport.m */; };
+		9F5A02832971491F002DAF1A /* NetWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A024B2971491F002DAF1A /* NetWatcher.m */; };
+		9F5A02842971491F002DAF1A /* SPPlayCGIParser_V4.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A024F2971491F002DAF1A /* SPPlayCGIParser_V4.m */; };
+		9F5A02852971491F002DAF1A /* SPPlayCGIParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A02512971491F002DAF1A /* SPPlayCGIParser.m */; };
+		9F5A02862971491F002DAF1A /* SPPlayCGIParser_V2.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A02532971491F002DAF1A /* SPPlayCGIParser_V2.m */; };
+		9F5A02872971491F002DAF1A /* SPSubStreamInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A02572971491F002DAF1A /* SPSubStreamInfo.m */; };
+		9F5A02882971491F002DAF1A /* SuperPlayerUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A025C2971491F002DAF1A /* SuperPlayerUrl.m */; };
+		9F5A02892971491F002DAF1A /* SPPlayCGIParseResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A025D2971491F002DAF1A /* SPPlayCGIParseResult.m */; };
+		9F5A028A2971491F002DAF1A /* SuperPlayerSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A025F2971491F002DAF1A /* SuperPlayerSprite.m */; };
+		9F5A028B2971491F002DAF1A /* SPVideoFrameDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A02602971491F002DAF1A /* SPVideoFrameDescription.m */; };
+		9F5A028C2971491F002DAF1A /* AdaptiveStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A02612971491F002DAF1A /* AdaptiveStream.m */; };
+		9F5A028D2971491F002DAF1A /* SuperPlayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A02632971491F002DAF1A /* SuperPlayerModel.m */; };
+		9F5A028E2971491F002DAF1A /* SuperPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A02642971491F002DAF1A /* SuperPlayerControlView.m */; };
+		9F5A028F2971491F002DAF1A /* SuperPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9F5A02672971491F002DAF1A /* SuperPlayer.bundle */; };
+		9F5A02902971491F002DAF1A /* SuperPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A02682971491F002DAF1A /* SuperPlayerView.m */; };
+		9F5A02912971491F002DAF1A /* SuperPlayerViewConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A02692971491F002DAF1A /* SuperPlayerViewConfig.m */; };
+		9F5A02922971491F002DAF1A /* PlayerSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A026B2971491F002DAF1A /* PlayerSlider.m */; };
+		9F5A02932971491F002DAF1A /* SuperPlayerFastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A02712971491F002DAF1A /* SuperPlayerFastView.m */; };
+		9F5A02942971491F002DAF1A /* MMMaterialDesignSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A02722971491F002DAF1A /* MMMaterialDesignSpinner.m */; };
+		9F5A02952971491F002DAF1A /* SuperPlayerSettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A02732971491F002DAF1A /* SuperPlayerSettingsView.m */; };
 		9F8848E724497C300085ACAF /* DouYinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F8848E624497C300085ACAF /* DouYinViewController.m */; };
 		9F8848EA24497E540085ACAF /* DouYinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F8848E924497E540085ACAF /* DouYinModel.m */; };
 		9F8848ED2449871F0085ACAF /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F8848EC2449871F0085ACAF /* data.json */; };
@@ -59,6 +91,75 @@
 		9F4DAA012449992500630680 /* DouYinTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DouYinTableViewCell.m; sourceTree = "<group>"; };
 		9F4DAA032449AD3F00630680 /* SPDouYinControlView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPDouYinControlView.h; sourceTree = "<group>"; };
 		9F4DAA042449AD3F00630680 /* SPDouYinControlView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPDouYinControlView.m; sourceTree = "<group>"; };
+		9F5A022A2971491F002DAF1A /* SuperPlayerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperPlayerModel.h; sourceTree = "<group>"; };
+		9F5A022C2971491F002DAF1A /* UIView+MMLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MMLayout.h"; sourceTree = "<group>"; };
+		9F5A022D2971491F002DAF1A /* NSString+URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URL.m"; sourceTree = "<group>"; };
+		9F5A022E2971491F002DAF1A /* UINavigationController+SuperPlayerRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+SuperPlayerRotation.h"; sourceTree = "<group>"; };
+		9F5A022F2971491F002DAF1A /* UIViewController+SuperPlayerRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SuperPlayerRotation.h"; sourceTree = "<group>"; };
+		9F5A02302971491F002DAF1A /* UINavigationController+SuperPlayerRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+SuperPlayerRotation.m"; sourceTree = "<group>"; };
+		9F5A02312971491F002DAF1A /* NSString+URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URL.h"; sourceTree = "<group>"; };
+		9F5A02322971491F002DAF1A /* UIView+MMLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MMLayout.m"; sourceTree = "<group>"; };
+		9F5A02332971491F002DAF1A /* UIViewController+SuperPlayerRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SuperPlayerRotation.m"; sourceTree = "<group>"; };
+		9F5A02342971491F002DAF1A /* SuperPlayerViewConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperPlayerViewConfig.h; sourceTree = "<group>"; };
+		9F5A02352971491F002DAF1A /* SuperPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperPlayerView.h; sourceTree = "<group>"; };
+		9F5A02362971491F002DAF1A /* SuperPlayerWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperPlayerWindow.m; sourceTree = "<group>"; };
+		9F5A02382971491F002DAF1A /* SPWeiboControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPWeiboControlView.m; sourceTree = "<group>"; };
+		9F5A02392971491F002DAF1A /* SPDefaultControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDefaultControlView.m; sourceTree = "<group>"; };
+		9F5A023A2971491F002DAF1A /* SPDefaultControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDefaultControlView.h; sourceTree = "<group>"; };
+		9F5A023B2971491F002DAF1A /* SPWeiboControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPWeiboControlView.h; sourceTree = "<group>"; };
+		9F5A023C2971491F002DAF1A /* SuperPlayerControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperPlayerControlView.h; sourceTree = "<group>"; };
+		9F5A023E2971491F002DAF1A /* UIView+Fade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Fade.h"; sourceTree = "<group>"; };
+		9F5A023F2971491F002DAF1A /* TXBitrateItemHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXBitrateItemHelper.h; sourceTree = "<group>"; };
+		9F5A02402971491F002DAF1A /* J2Obj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = J2Obj.h; sourceTree = "<group>"; };
+		9F5A02412971491F002DAF1A /* StrUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrUtils.h; sourceTree = "<group>"; };
+		9F5A02422971491F002DAF1A /* NetWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWatcher.h; sourceTree = "<group>"; };
+		9F5A02432971491F002DAF1A /* DataReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataReport.h; sourceTree = "<group>"; };
+		9F5A02442971491F002DAF1A /* TXCUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXCUrl.h; sourceTree = "<group>"; };
+		9F5A02452971491F002DAF1A /* UIView+Fade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Fade.m"; sourceTree = "<group>"; };
+		9F5A02462971491F002DAF1A /* StrUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrUtils.m; sourceTree = "<group>"; };
+		9F5A02472971491F002DAF1A /* J2Obj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = J2Obj.m; sourceTree = "<group>"; };
+		9F5A02482971491F002DAF1A /* TXBitrateItemHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXBitrateItemHelper.m; sourceTree = "<group>"; };
+		9F5A02492971491F002DAF1A /* TXCUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXCUrl.m; sourceTree = "<group>"; };
+		9F5A024A2971491F002DAF1A /* DataReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataReport.m; sourceTree = "<group>"; };
+		9F5A024B2971491F002DAF1A /* NetWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWatcher.m; sourceTree = "<group>"; };
+		9F5A024C2971491F002DAF1A /* SuperPlayerModelInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperPlayerModelInternal.h; sourceTree = "<group>"; };
+		9F5A024D2971491F002DAF1A /* SuperPlayerControlViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperPlayerControlViewDelegate.h; sourceTree = "<group>"; };
+		9F5A024F2971491F002DAF1A /* SPPlayCGIParser_V4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPPlayCGIParser_V4.m; sourceTree = "<group>"; };
+		9F5A02502971491F002DAF1A /* SPPlayCGIParser_V2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPPlayCGIParser_V2.h; sourceTree = "<group>"; };
+		9F5A02512971491F002DAF1A /* SPPlayCGIParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPPlayCGIParser.m; sourceTree = "<group>"; };
+		9F5A02522971491F002DAF1A /* SPPlayCGIParserProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPPlayCGIParserProtocol.h; sourceTree = "<group>"; };
+		9F5A02532971491F002DAF1A /* SPPlayCGIParser_V2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPPlayCGIParser_V2.m; sourceTree = "<group>"; };
+		9F5A02542971491F002DAF1A /* SPPlayCGIParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPPlayCGIParser.h; sourceTree = "<group>"; };
+		9F5A02552971491F002DAF1A /* SPPlayCGIParser_V4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPPlayCGIParser_V4.h; sourceTree = "<group>"; };
+		9F5A02572971491F002DAF1A /* SPSubStreamInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSubStreamInfo.m; sourceTree = "<group>"; };
+		9F5A02582971491F002DAF1A /* SPPlayCGIParseResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPPlayCGIParseResult.h; sourceTree = "<group>"; };
+		9F5A02592971491F002DAF1A /* SuperPlayerSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperPlayerSprite.h; sourceTree = "<group>"; };
+		9F5A025A2971491F002DAF1A /* AdaptiveStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdaptiveStream.h; sourceTree = "<group>"; };
+		9F5A025B2971491F002DAF1A /* SPVideoFrameDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVideoFrameDescription.h; sourceTree = "<group>"; };
+		9F5A025C2971491F002DAF1A /* SuperPlayerUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperPlayerUrl.m; sourceTree = "<group>"; };
+		9F5A025D2971491F002DAF1A /* SPPlayCGIParseResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPPlayCGIParseResult.m; sourceTree = "<group>"; };
+		9F5A025E2971491F002DAF1A /* SPSubStreamInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSubStreamInfo.h; sourceTree = "<group>"; };
+		9F5A025F2971491F002DAF1A /* SuperPlayerSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperPlayerSprite.m; sourceTree = "<group>"; };
+		9F5A02602971491F002DAF1A /* SPVideoFrameDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPVideoFrameDescription.m; sourceTree = "<group>"; };
+		9F5A02612971491F002DAF1A /* AdaptiveStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdaptiveStream.m; sourceTree = "<group>"; };
+		9F5A02622971491F002DAF1A /* SuperPlayerUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperPlayerUrl.h; sourceTree = "<group>"; };
+		9F5A02632971491F002DAF1A /* SuperPlayerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperPlayerModel.m; sourceTree = "<group>"; };
+		9F5A02642971491F002DAF1A /* SuperPlayerControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperPlayerControlView.m; sourceTree = "<group>"; };
+		9F5A02652971491F002DAF1A /* SuperPlayerWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperPlayerWindow.h; sourceTree = "<group>"; };
+		9F5A02672971491F002DAF1A /* SuperPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SuperPlayer.bundle; sourceTree = "<group>"; };
+		9F5A02682971491F002DAF1A /* SuperPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperPlayerView.m; sourceTree = "<group>"; };
+		9F5A02692971491F002DAF1A /* SuperPlayerViewConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperPlayerViewConfig.m; sourceTree = "<group>"; };
+		9F5A026B2971491F002DAF1A /* PlayerSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerSlider.m; sourceTree = "<group>"; };
+		9F5A026C2971491F002DAF1A /* SuperPlayerFastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperPlayerFastView.h; sourceTree = "<group>"; };
+		9F5A026D2971491F002DAF1A /* SuperPlayerView+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SuperPlayerView+Private.h"; sourceTree = "<group>"; };
+		9F5A026E2971491F002DAF1A /* MMMaterialDesignSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMaterialDesignSpinner.h; sourceTree = "<group>"; };
+		9F5A026F2971491F002DAF1A /* SuperPlayerSettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperPlayerSettingsView.h; sourceTree = "<group>"; };
+		9F5A02702971491F002DAF1A /* PlayerSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerSlider.h; sourceTree = "<group>"; };
+		9F5A02712971491F002DAF1A /* SuperPlayerFastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperPlayerFastView.m; sourceTree = "<group>"; };
+		9F5A02722971491F002DAF1A /* MMMaterialDesignSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMaterialDesignSpinner.m; sourceTree = "<group>"; };
+		9F5A02732971491F002DAF1A /* SuperPlayerSettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperPlayerSettingsView.m; sourceTree = "<group>"; };
+		9F5A02742971491F002DAF1A /* SuperPlayerHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperPlayerHelpers.h; sourceTree = "<group>"; };
+		9F5A02752971491F002DAF1A /* SuperPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperPlayer.h; sourceTree = "<group>"; };
 		9F8848E524497C300085ACAF /* DouYinViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DouYinViewController.h; sourceTree = "<group>"; };
 		9F8848E624497C300085ACAF /* DouYinViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DouYinViewController.m; sourceTree = "<group>"; };
 		9F8848E824497E540085ACAF /* DouYinModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DouYinModel.h; sourceTree = "<group>"; };
@@ -151,6 +252,138 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F5A02292971491F002DAF1A /* SuperPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				9F5A022B2971491F002DAF1A /* Category */,
+				9F5A02562971491F002DAF1A /* Model */,
+				9F5A024E2971491F002DAF1A /* PlayCGI */,
+				9F5A02662971491F002DAF1A /* Resource */,
+				9F5A02372971491F002DAF1A /* Skins */,
+				9F5A02752971491F002DAF1A /* SuperPlayer.h */,
+				9F5A023C2971491F002DAF1A /* SuperPlayerControlView.h */,
+				9F5A02642971491F002DAF1A /* SuperPlayerControlView.m */,
+				9F5A024D2971491F002DAF1A /* SuperPlayerControlViewDelegate.h */,
+				9F5A02742971491F002DAF1A /* SuperPlayerHelpers.h */,
+				9F5A022A2971491F002DAF1A /* SuperPlayerModel.h */,
+				9F5A02632971491F002DAF1A /* SuperPlayerModel.m */,
+				9F5A024C2971491F002DAF1A /* SuperPlayerModelInternal.h */,
+				9F5A02352971491F002DAF1A /* SuperPlayerView.h */,
+				9F5A02682971491F002DAF1A /* SuperPlayerView.m */,
+				9F5A02342971491F002DAF1A /* SuperPlayerViewConfig.h */,
+				9F5A02692971491F002DAF1A /* SuperPlayerViewConfig.m */,
+				9F5A02652971491F002DAF1A /* SuperPlayerWindow.h */,
+				9F5A02362971491F002DAF1A /* SuperPlayerWindow.m */,
+				9F5A023D2971491F002DAF1A /* Utils */,
+				9F5A026A2971491F002DAF1A /* Views */,
+			);
+			path = SuperPlayer;
+			sourceTree = "<group>";
+		};
+		9F5A022B2971491F002DAF1A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				9F5A022C2971491F002DAF1A /* UIView+MMLayout.h */,
+				9F5A022D2971491F002DAF1A /* NSString+URL.m */,
+				9F5A022E2971491F002DAF1A /* UINavigationController+SuperPlayerRotation.h */,
+				9F5A022F2971491F002DAF1A /* UIViewController+SuperPlayerRotation.h */,
+				9F5A02302971491F002DAF1A /* UINavigationController+SuperPlayerRotation.m */,
+				9F5A02312971491F002DAF1A /* NSString+URL.h */,
+				9F5A02322971491F002DAF1A /* UIView+MMLayout.m */,
+				9F5A02332971491F002DAF1A /* UIViewController+SuperPlayerRotation.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		9F5A02372971491F002DAF1A /* Skins */ = {
+			isa = PBXGroup;
+			children = (
+				9F5A02382971491F002DAF1A /* SPWeiboControlView.m */,
+				9F5A02392971491F002DAF1A /* SPDefaultControlView.m */,
+				9F5A023A2971491F002DAF1A /* SPDefaultControlView.h */,
+				9F5A023B2971491F002DAF1A /* SPWeiboControlView.h */,
+			);
+			path = Skins;
+			sourceTree = "<group>";
+		};
+		9F5A023D2971491F002DAF1A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9F5A023E2971491F002DAF1A /* UIView+Fade.h */,
+				9F5A023F2971491F002DAF1A /* TXBitrateItemHelper.h */,
+				9F5A02402971491F002DAF1A /* J2Obj.h */,
+				9F5A02412971491F002DAF1A /* StrUtils.h */,
+				9F5A02422971491F002DAF1A /* NetWatcher.h */,
+				9F5A02432971491F002DAF1A /* DataReport.h */,
+				9F5A02442971491F002DAF1A /* TXCUrl.h */,
+				9F5A02452971491F002DAF1A /* UIView+Fade.m */,
+				9F5A02462971491F002DAF1A /* StrUtils.m */,
+				9F5A02472971491F002DAF1A /* J2Obj.m */,
+				9F5A02482971491F002DAF1A /* TXBitrateItemHelper.m */,
+				9F5A02492971491F002DAF1A /* TXCUrl.m */,
+				9F5A024A2971491F002DAF1A /* DataReport.m */,
+				9F5A024B2971491F002DAF1A /* NetWatcher.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9F5A024E2971491F002DAF1A /* PlayCGI */ = {
+			isa = PBXGroup;
+			children = (
+				9F5A024F2971491F002DAF1A /* SPPlayCGIParser_V4.m */,
+				9F5A02502971491F002DAF1A /* SPPlayCGIParser_V2.h */,
+				9F5A02512971491F002DAF1A /* SPPlayCGIParser.m */,
+				9F5A02522971491F002DAF1A /* SPPlayCGIParserProtocol.h */,
+				9F5A02532971491F002DAF1A /* SPPlayCGIParser_V2.m */,
+				9F5A02542971491F002DAF1A /* SPPlayCGIParser.h */,
+				9F5A02552971491F002DAF1A /* SPPlayCGIParser_V4.h */,
+			);
+			path = PlayCGI;
+			sourceTree = "<group>";
+		};
+		9F5A02562971491F002DAF1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9F5A02572971491F002DAF1A /* SPSubStreamInfo.m */,
+				9F5A02582971491F002DAF1A /* SPPlayCGIParseResult.h */,
+				9F5A02592971491F002DAF1A /* SuperPlayerSprite.h */,
+				9F5A025A2971491F002DAF1A /* AdaptiveStream.h */,
+				9F5A025B2971491F002DAF1A /* SPVideoFrameDescription.h */,
+				9F5A025C2971491F002DAF1A /* SuperPlayerUrl.m */,
+				9F5A025D2971491F002DAF1A /* SPPlayCGIParseResult.m */,
+				9F5A025E2971491F002DAF1A /* SPSubStreamInfo.h */,
+				9F5A025F2971491F002DAF1A /* SuperPlayerSprite.m */,
+				9F5A02602971491F002DAF1A /* SPVideoFrameDescription.m */,
+				9F5A02612971491F002DAF1A /* AdaptiveStream.m */,
+				9F5A02622971491F002DAF1A /* SuperPlayerUrl.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9F5A02662971491F002DAF1A /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				9F5A02672971491F002DAF1A /* SuperPlayer.bundle */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		9F5A026A2971491F002DAF1A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9F5A026B2971491F002DAF1A /* PlayerSlider.m */,
+				9F5A026C2971491F002DAF1A /* SuperPlayerFastView.h */,
+				9F5A026D2971491F002DAF1A /* SuperPlayerView+Private.h */,
+				9F5A026E2971491F002DAF1A /* MMMaterialDesignSpinner.h */,
+				9F5A026F2971491F002DAF1A /* SuperPlayerSettingsView.h */,
+				9F5A02702971491F002DAF1A /* PlayerSlider.h */,
+				9F5A02712971491F002DAF1A /* SuperPlayerFastView.m */,
+				9F5A02722971491F002DAF1A /* MMMaterialDesignSpinner.m */,
+				9F5A02732971491F002DAF1A /* SuperPlayerSettingsView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		9F8EE56624A5AA4000A88649 /* DouYinView */ = {
 			isa = PBXGroup;
 			children = (
@@ -301,6 +534,7 @@
 		9FA088EE244718EA00FAE236 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				9F5A02292971491F002DAF1A /* SuperPlayer */,
 				9F976E01244EB71F009C9C0E /* GiftAnimation */,
 				9FA088F524471E8E00FAE236 /* YYFPSLabel.h */,
 				9FA088F624471E8E00FAE236 /* YYFPSLabel.m */,
@@ -530,6 +764,7 @@
 				9F8848ED2449871F0085ACAF /* data.json in Resources */,
 				9FF9162C2579C5ED00F2F367 /* S2U0W2D4_720_course_c4b0c16f3746ee2fb29eeae486cf36ad.mp4 in Resources */,
 				9F8EE56524A4927D00A88649 /* douyin.json in Resources */,
+				9F5A028F2971491F002DAF1A /* SuperPlayer.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,37 +822,68 @@
 				9FA088F724471E8E00FAE236 /* YYFPSLabel.m in Sources */,
 				9FA14C722578D45A000BC6E3 /* ZBGameQueue.m in Sources */,
 				9F8848EA24497E540085ACAF /* DouYinModel.m in Sources */,
+				9F5A02852971491F002DAF1A /* SPPlayCGIParser.m in Sources */,
+				9F5A02812971491F002DAF1A /* TXCUrl.m in Sources */,
 				9FA088D52446E41300FAE236 /* ChatInputBoardView.m in Sources */,
+				9F5A02822971491F002DAF1A /* DataReport.m in Sources */,
 				9F8DFD302489F9CE00804EA1 /* BarrageViewController.m in Sources */,
+				9F5A02862971491F002DAF1A /* SPPlayCGIParser_V2.m in Sources */,
 				9F8F5EF72445578B00A27071 /* ViewController.m in Sources */,
+				9F5A027D2971491F002DAF1A /* UIView+Fade.m in Sources */,
+				9F5A028E2971491F002DAF1A /* SuperPlayerControlView.m in Sources */,
 				9F976E0C244EB71F009C9C0E /* NDGiftAnimationView.m in Sources */,
+				9F5A028D2971491F002DAF1A /* SuperPlayerModel.m in Sources */,
 				9FA088D02446E05500FAE236 /* LiveRoomViewController.m in Sources */,
+				9F5A02802971491F002DAF1A /* TXBitrateItemHelper.m in Sources */,
 				9FE3B94A2574DD7A0057CA50 /* GameViewController.m in Sources */,
 				9F976E0E244EB71F009C9C0E /* NDGiftAnimationImgView.m in Sources */,
+				9F5A028A2971491F002DAF1A /* SuperPlayerSprite.m in Sources */,
+				9F5A02882971491F002DAF1A /* SuperPlayerUrl.m in Sources */,
 				9F98618A2452E06500616229 /* ChatRoomGiftModel.m in Sources */,
 				9F976E0B244EB71F009C9C0E /* NDGiftAnimation.m in Sources */,
 				9FA088E42447068A00FAE236 /* ChatRoomMessageModel.m in Sources */,
 				9F8F5EF12445578B00A27071 /* AppDelegate.m in Sources */,
+				9F5A027F2971491F002DAF1A /* J2Obj.m in Sources */,
 				9F9CC2552575DC2900BAABBD /* UIViewController+ZBKit.m in Sources */,
 				9F8F3BAF25764CB8002604E2 /* ScoreView.m in Sources */,
 				9FFCF1A8252D793200A8B984 /* BanMaAiViewController.m in Sources */,
 				9F8F5F022445578F00A27071 /* main.m in Sources */,
+				9F5A027A2971491F002DAF1A /* SuperPlayerWindow.m in Sources */,
+				9F5A02832971491F002DAF1A /* NetWatcher.m in Sources */,
 				9FA088DB2446E82F00FAE236 /* UITextView+ZBPlaceHolder.m in Sources */,
+				9F5A027B2971491F002DAF1A /* SPWeiboControlView.m in Sources */,
 				9F976E11244EBD61009C9C0E /* ChatRoomUserModel.m in Sources */,
 				9F976E0D244EB71F009C9C0E /* NDGiftModel.m in Sources */,
 				9F976E20244EFCF2009C9C0E /* ZBChatRoomView.m in Sources */,
+				9F5A027E2971491F002DAF1A /* StrUtils.m in Sources */,
+				9F5A02782971491F002DAF1A /* UIView+MMLayout.m in Sources */,
+				9F5A02942971491F002DAF1A /* MMMaterialDesignSpinner.m in Sources */,
 				9F4DAA052449AD3F00630680 /* SPDouYinControlView.m in Sources */,
 				9FA088F32447192200FAE236 /* YYWeakProxy.m in Sources */,
+				9F5A02772971491F002DAF1A /* UINavigationController+SuperPlayerRotation.m in Sources */,
+				9F5A02952971491F002DAF1A /* SuperPlayerSettingsView.m in Sources */,
 				9F8F5EF42445578B00A27071 /* SceneDelegate.m in Sources */,
 				9FA088EA24470F5900FAE236 /* ChatRoomSystemMessageCell.m in Sources */,
 				9F8848E724497C300085ACAF /* DouYinViewController.m in Sources */,
 				9F8DFD33248A172700804EA1 /* ZBBarrageQueue.m in Sources */,
 				9FA088D82446E6E500FAE236 /* UIView+ZBExtension.m in Sources */,
+				9F5A02762971491F002DAF1A /* NSString+URL.m in Sources */,
+				9F5A02912971491F002DAF1A /* SuperPlayerViewConfig.m in Sources */,
 				9F976E14244EC2A8009C9C0E /* UIView+Frame.m in Sources */,
 				9FA088E724470DE100FAE236 /* ChatRoomBaseCell.m in Sources */,
 				9F976E1D244EF9E5009C9C0E /* NSMutableArray+Check.m in Sources */,
+				9F5A02792971491F002DAF1A /* UIViewController+SuperPlayerRotation.m in Sources */,
+				9F5A02902971491F002DAF1A /* SuperPlayerView.m in Sources */,
+				9F5A028B2971491F002DAF1A /* SPVideoFrameDescription.m in Sources */,
+				9F5A02842971491F002DAF1A /* SPPlayCGIParser_V4.m in Sources */,
+				9F5A02922971491F002DAF1A /* PlayerSlider.m in Sources */,
 				9FA088ED2447101400FAE236 /* ChatRoomTextMessageCell.m in Sources */,
+				9F5A02932971491F002DAF1A /* SuperPlayerFastView.m in Sources */,
 				9F4DAA022449992500630680 /* DouYinTableViewCell.m in Sources */,
+				9F5A028C2971491F002DAF1A /* AdaptiveStream.m in Sources */,
+				9F5A027C2971491F002DAF1A /* SPDefaultControlView.m in Sources */,
+				9F5A02872971491F002DAF1A /* SPSubStreamInfo.m in Sources */,
+				9F5A02892971491F002DAF1A /* SPPlayCGIParseResult.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

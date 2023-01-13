@@ -8,7 +8,7 @@
 
 #import "AdViewController.h"
 #import <Masonry/Masonry.h>
-#import <SuperPlayer/SuperPlayer.h>
+#import "SuperPlayer.h"
 #import "UIImageView+WebCache.h"
 #import "YYWeakProxy.h"
 @interface AdViewController ()<SuperPlayerDelegate>

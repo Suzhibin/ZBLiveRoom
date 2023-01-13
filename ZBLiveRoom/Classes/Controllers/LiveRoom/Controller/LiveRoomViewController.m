@@ -8,7 +8,7 @@
 
 #import "LiveRoomViewController.h"
 #import <Masonry/Masonry.h>
-#import <SuperPlayer/SuperPlayer.h>
+#import "SuperPlayer.h"
 #import "ChatInputBoardView.h"
 #import "ChatRoomSystemMessageCell.h"
 #import "ChatRoomTextMessageCell.h"
